@@ -1,0 +1,314 @@
+
+$front_page_icon-height: 92px;
+
+.paint-options-items {
+
+  float: right;
+
+  li {
+    width: $front_page_icon-height;
+    height: $front_page_icon-height;
+    background: url("images/paint-options.png") no-repeat;
+    background-size: cover;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    padding:0;
+
+    @include tablet-portrait {
+      margin-bottom: 15px;
+    }
+
+    a {
+      display: block;
+      width: $front_page_icon-height;
+      height: $front_page_icon-height;
+      -webkit-border-radius: ($front_page_icon-height) / 2;
+      -moz-border-radius: ($front_page_icon-height) / 2;
+      border-radius: ($front_page_icon-height) / 2;
+      color: #fff;
+      text-align: center;
+      line-height: $front_page_icon-height;
+      background: rgba(0, 0, 0, 0);
+      @include font-size(1.4);
+      font-weight: 700;
+      text-indent: -999999999px;
+      text-decoration: none;
+      outline: 0;
+
+      &:hover {
+        text-indent: 0;
+        background: rgba(76, 77, 79, 0.86);
+      }
+    }
+
+  }
+
+  li.furniture {
+    background-position: 1px 0;
+  }
+
+  li.yard {
+    background-position: (($front_page_icon-height * -1)*1)+1 0;
+  }
+
+  li.floor {
+    background-position: (($front_page_icon-height * -1)*2)+1 0;
+  }
+
+  li.facade {
+    background-position: (($front_page_icon-height * -1)*3)+1 0;
+  }
+
+  li.restoration {
+    background-position: (($front_page_icon-height * -1)*4)+1 0;
+  }
+
+  li.toys {
+    background-position: (($front_page_icon-height * -1)*5)+1 0;
+  }
+
+  li.sauna {
+    background-position: (($front_page_icon-height * -1)*6) 0;
+  }
+
+
+  @include tablet-portrait-down {
+    float: left;
+
+    li {
+      width: 70px;
+      height: 70px;
+      background: url("images/paint-options.png") no-repeat;
+      background-size: cover;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      padding: 0;
+
+      a {
+        display: block;
+        width: 70px;
+        height: 70px;
+        -webkit-border-radius: (70px) / 2;
+        -moz-border-radius: (70px) / 2;
+        border-radius: (70px) / 2;
+        color: #fff;
+        text-align: center;
+        line-height: 70px;
+        background: rgba(0, 0, 0, 0);
+        @include font-size(1);
+        font-weight: 300;
+        text-indent: -999999999px;
+        text-decoration: none;
+        outline: 0;
+
+        &:hover {
+          text-indent: 0;
+          background: rgba(76, 77, 79, 0.86);
+        }
+      }
+
+    }
+
+    li.furniture {
+      background-position: 0 0;
+    }
+
+    li.yard {
+      background-position: (-70px)*1 0;
+    }
+
+    li.floor {
+      background-position: ((-70px)*2) 0;
+    }
+
+    li.facade {
+      background-position: ((-70px)*3) 0;
+    }
+
+    li.restoration {
+      background-position: ((-70px)*4) 0;
+    }
+
+    li.toys {
+      background-position: ((-70px)*5) 0;
+    }
+
+
+    li.sauna {
+      background-position: ((-70px)*6) 0;
+    }
+  }
+
+  @include mobile-landscape-down {
+    float: left;
+
+    li {
+      width: 56px;
+      height: 56px;
+      background: url("images/paint-options.png") no-repeat;
+      background-size: cover;
+      margin-top: 10px;
+      margin-left: 10px;
+      padding: 0;
+      margin-bottom: 10px;
+
+      a {
+        display: block;
+        width: 56px;
+        height: 56px;
+        -webkit-border-radius: (56px) / 2;
+        -moz-border-radius: (56px) / 2;
+        border-radius: (56px) / 2;
+        color: #fff;
+        text-align: center;
+        line-height: 56px;
+        background: rgba(0, 0, 0, 0);
+        @include font-size(1);
+        font-weight: 300;
+        text-indent: -999999999px;
+        text-decoration: none;
+        outline: 0;
+
+        &:hover {
+          text-indent: 0;
+          background: rgba(76, 77, 79, 0.86);
+        }
+      }
+
+    }
+
+    li.furniture {
+      background-position: 0 0;
+    }
+
+    li.yard {
+      background-position: (-56px)*1 0;
+    }
+
+    li.floor {
+      background-position: ((-56px)*2) 0;
+    }
+
+    li.facade {
+      background-position: ((-56px)*3) 0;
+    }
+
+    li.restoration {
+      background-position: ((-56px)*4) 0;
+    }
+
+    li.toys {
+      background-position: ((-56px)*5) 0;
+    }
+
+    li.sauna {
+      background-position: ((-56px)*6) 0;
+    }
+
+  }
+
+}
+
+.products-list-paint-options-items {
+
+  float: right;
+
+  @include mobile-portrait-down {
+    float: none;
+  }
+
+  li {
+    width: 56px;
+    height: 56px;
+    background: url("images/paint-options.png") no-repeat;
+    background-size: cover;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    padding: 0;
+
+    &:hover {
+      transform: scale(1.7);
+      @include mobile-landscape-down {
+        transform: scale(1.45);
+      }
+    }
+
+    a {
+      display: block;
+      width: 56px;
+      height: 56px;
+      -webkit-border-radius: (56px) / 2;
+      -moz-border-radius: (56px) / 2;
+      border-radius: (56px) / 2;
+      color: #fff;
+      text-align: center;
+      line-height: 56px;
+      background: rgba(0, 0, 0, 0);
+      @include font-size(0.9);
+      font-weight: 300;
+      text-indent: -999999999px;
+      text-decoration: none;
+      outline: 0;
+
+      &:hover {
+        text-indent: 0;
+        background: rgba(76, 77, 79, 0.86);
+      }
+    }
+
+  }
+
+  li.active {
+    transform: scale(1.7);
+    @include mobile-landscape-down {
+      transform: scale(1.45);
+    }
+    a {
+      text-indent: 0;
+      background: rgba(76, 77, 79, 0.86);
+    }
+  }
+
+  li.want-to-color {
+    width: auto;
+    background: none;
+    @include font-size(1.6);
+    font-weight: bold;
+    text-transform: uppercase;
+    transform: scale(1);
+    margin: 0 0 0 15px;
+    @include mobile-landscape-down {
+      display: block;
+    }
+  }
+
+  li.furniture {
+    background-position: 0 0;
+  }
+
+  li.yard {
+    background-position: (-56px)*1 0;
+  }
+
+  li.floor {
+    background-position: ((-56px)*2) 0;
+  }
+
+  li.facade {
+    background-position: ((-56px)*3) 0;
+  }
+
+  li.restoration {
+    background-position: ((-56px)*4) 0;
+  }
+
+  li.toys {
+    background-position: ((-56px)*5) 0;
+  }
+
+  li.sauna {
+    background-position: ((-56px)*6) 0;
+  }
+
+}

@@ -1,0 +1,79 @@
+.tools {
+  .col-sm-6 .tools-image {
+    margin-bottom: 40px;
+  }
+}
+
+.tools-text-container {
+  position: relative;
+  height: 260px;
+  @include mobile-landscape-down {
+    height: 120px;
+  }
+  @include tablet-portrait {
+    height: 100px;
+  }
+  display: block;
+}
+
+.tools-text {
+
+  position: absolute;
+  bottom: 0;
+
+  @include tablet-portrait {
+    position: relative;
+  }
+
+  h3{
+    @include font-size(3.6);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  p{
+    @include font-size(1.4);
+  }
+
+}
+
+.tools-image {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+
+  background: #fff;
+
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.3);
+
+  padding: 11px 8px;
+
+  @include tablet-portrait-down {
+    width: 240px;
+    margin:0 auto;
+    text-align: center;
+  }
+
+  img {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    border: 1px solid #dedbdb;
+
+    &:hover{
+      opacity: 0.9;
+    }
+  }
+
+  &.house {
+    @include tablet-portrait-down {
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+

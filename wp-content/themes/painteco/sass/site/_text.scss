@@ -1,0 +1,54 @@
+.text {
+  @include font-size(1.5);
+
+  .why & {
+    @include font-size(1.7);
+  }
+
+  a {
+    color: #71b30a;
+    text-decoration: underline;
+    &:hover {
+      color: darken(#71b30a, 10%);
+    }
+  }
+
+  iframe {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h2 {
+    @include font-size(1.8);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h3 {
+    @include font-size(1.6);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h4 {
+    @include font-size(1.4);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  p+ul, p+ol {
+    margin-top: -15px;
+  }
+
+  ul,ol {
+    margin-left: 18px;
+    padding-left: 0;
+  }
+
+  li {
+    list-style-image: url("images/li.png");
+  }
+
+  p {
+    text-align: justify;
+  }
+
+}

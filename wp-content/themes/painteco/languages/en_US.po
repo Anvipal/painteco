@@ -1,0 +1,384 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Painteco\n"
+"POT-Creation-Date: 2016-06-15 21:53+0300\n"
+"PO-Revision-Date: 2016-07-11 21:09+0300\n"
+"Last-Translator: \n"
+"Language-Team: Lapuvieta.lv <info@lapuvieta.lv>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: esc_html_e;esc_html__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:19
+msgid "Ak vai! Šo lapu mēs nevaram atrast."
+msgstr "Upsss! This page cannot be found."
+
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:56
+msgid "Galvenais"
+msgstr ""
+
+#: functions.php:57
+msgid "Kājene: Par mums"
+msgstr ""
+
+#: functions.php:58
+msgid "Apakšizvēlne: Par mums"
+msgstr ""
+
+#: functions.php:59
+msgid "Kājene: Produkti"
+msgstr ""
+
+#: functions.php:60
+msgid "Kājene: Kontakti"
+msgstr ""
+
+#: functions.php:61
+msgid "Kājene: Galerija"
+msgstr ""
+
+#: functions.php:120
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:24
+msgid "Virzīties uz saturu"
+msgstr ""
+
+#: header.php:60
+msgid "Kas ir Paint Eco?"
+msgstr "What is Paint Eco?"
+
+#: inc/template-tags.php:51 inc/template-tags.php:57
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:53
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:59
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:65
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:65
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:65
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:72 template-parts/content-page.php:33
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: search.php:26
+#, php-format
+msgid "Atradām, kad meklējām: %s"
+msgstr "Found when search for: %s"
+
+#: searchform.php:5
+msgid "Meklēt ..."
+msgstr "Search…"
+
+#: single-painteco_color_model.php:66
+msgid "Jumts"
+msgstr "Roof"
+
+#: single-painteco_color_model.php:70
+msgid "Logi"
+msgstr "Windows"
+
+#: single-painteco_color_model.php:74
+msgid "Durvis"
+msgstr "Doors"
+
+#: single-painteco_color_model.php:78
+msgid "Fasāde"
+msgstr "Facade"
+
+#: single-painteco_color_model.php:103
+msgid "Diemžēl, šī sadaļa pieejama tikai uz lielāka ekrāna."
+msgstr "Unfortunately, this section is only available on a wider screen."
+
+#: single-painteco_galleries.php:55
+msgid "Atpakaļ uz"
+msgstr "Back to"
+
+#: single.php:78
+msgid "Atpakaļ"
+msgstr "Back"
+
+#: template-contacts.php:19
+msgid "Kontakti"
+msgstr "Contacts"
+
+#: template-contacts.php:20 template-parts/contacts_map.php:6
+msgid "Kur iegādāties"
+msgstr "Where to buy"
+
+#: template-contacts.php:21 template-parts/contacts_distributors.php:14
+msgid "Ārvalstu pārstāvji"
+msgstr "Representatives"
+
+#: template-parts/about_philosophy.php:5
+msgid "Filozofija"
+msgstr "Philosophy"
+
+#: template-parts/about_projects.php:14 template-parts/about_research.php:13
+msgid "Lasīt vairāk"
+msgstr "Read more"
+
+#: template-parts/about_team.php:6
+msgid "Paint Eco - Linum Color komanda"
+msgstr "Paint ECO - Linum Color team"
+
+#: template-parts/about_why.php:4
+msgid "Kāpēc Paint ECO?"
+msgstr "Why Paint ECO?"
+
+#: template-parts/catalogues_modal.php:17
+#: template-parts/consumption-calculator.php:130
+msgid "Aizvērt"
+msgstr "Close"
+
+#: template-parts/consumption-calculator.php:3
+msgid "Ēvelēts"
+msgstr "Planed timber"
+
+#: template-parts/consumption-calculator.php:4
+msgid "Neēvelēts"
+msgstr "Rough sawn timber"
+
+#: template-parts/consumption-calculator.php:5
+msgid "Cietkoks"
+msgstr "Hardwood"
+
+#: template-parts/consumption-calculator.php:24
+#: template-parts/products_head.php:77
+msgid "Patēriņa kalkulators"
+msgstr "Consumption calculator"
+
+#: template-parts/consumption-calculator.php:32
+msgid "Virsmas tips"
+msgstr "Surface type"
+
+#: template-parts/consumption-calculator.php:47
+msgid "Visas 4 sienas"
+msgstr "All 4 walls"
+
+#: template-parts/consumption-calculator.php:50
+msgid "Zināms laukums"
+msgstr "Fixed area"
+
+#: template-parts/consumption-calculator.php:58
+msgid "Telpas izmērs"
+msgstr "Room size"
+
+#: template-parts/consumption-calculator.php:64
+msgid "Platums"
+msgstr "Width"
+
+#: template-parts/consumption-calculator.php:70
+msgid "Garums"
+msgstr "Length"
+
+#: template-parts/consumption-calculator.php:76
+msgid "Augstums"
+msgstr "Height"
+
+#: template-parts/consumption-calculator.php:85
+msgid "Logu skaits"
+msgstr "Window count"
+
+#: template-parts/consumption-calculator.php:91
+msgid "Durvju skaits"
+msgstr "Door count"
+
+#: template-parts/consumption-calculator.php:104
+msgid "Apstrādājamās virsmas laukums"
+msgstr "Treatment surface area"
+
+#: template-parts/consumption-calculator.php:123
+msgid "Rēķināt"
+msgstr "Calculate"
+
+#: template-parts/content-blog-list-item.php:41
+#: template-parts/content-news-list-item.php:31
+msgid "Atvērt"
+msgstr "Open"
+
+#: template-parts/content-none.php:15
+msgid "Neko neatradām"
+msgstr "Nothing found"
+
+#: template-parts/content-none.php:26
+msgid "Ak vai! Neko neizdevās atrast. Varbūt mēģini ar citu atslēgvārdu?"
+msgstr "Upsss! Nothing found. Maybe try with another keyword?"
+
+#: template-parts/content-none.php:30
+msgid ""
+"Izskatās, ka nevaram neko atrast. Varbūt mēģini meklēšanu pēc atslēgvārda?"
+msgstr ""
+"Looks like we can’t find what you are looking for. Maybe you can try search "
+"by keyword?"
+
+#: template-parts/content-page.php:22
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/footer_contacts.php:7
+msgid "Tālrunis"
+msgstr "Phone"
+
+#: template-parts/footer_contacts.php:12
+msgid "E-pasts"
+msgstr "E-mail"
+
+#: template-parts/footer_menu.php:54 template-parts/front_page_tools.php:38
+msgid "Galerija"
+msgstr "Gallery"
+
+#: template-parts/front_page_products.php:5 template-products.php:61
+msgid "Vēlos krāsot..."
+msgstr "Want to paint…"
+
+#: template-parts/front_page_products.php:12 template-products.php:62
+msgid "Mēbeles"
+msgstr "Furniture"
+
+#: template-parts/front_page_products.php:13 template-products.php:63
+msgid "Pagalms"
+msgstr "Yard"
+
+#: template-parts/front_page_products.php:14 template-products.php:64
+msgid "Grīda"
+msgstr "Floor"
+
+#: template-parts/front_page_products.php:15 template-products.php:65
+msgid "Māja"
+msgstr "Home"
+
+#: template-parts/front_page_products.php:16 template-products.php:66
+msgid "Restaurācija"
+msgstr "Restoration"
+
+#: template-parts/front_page_products.php:17 template-products.php:67
+msgid "Rotaļlietas"
+msgstr "Toys"
+
+#: template-parts/front_page_products.php:18 template-products.php:68
+msgid "Pirts"
+msgstr "Sauna"
+
+#: template-parts/front_page_tools.php:6
+msgid "Izkrāso pats!"
+msgstr "Paint it yourself!"
+
+#: template-parts/front_page_tools.php:7
+msgid "Izmanto mūsu modelēšanas rīku, lai ieraudzītu pasauli mūsu krāsās."
+msgstr "Use our modeling tool to see the world in our colors!"
+
+#: template-parts/front_page_tools.php:39
+msgid "Aplūko cik krāsaina var būt pasaule ar mūsu krāsām."
+msgstr "See how colorful can be world with our paints."
+
+#: template-parts/language_switch.php:15 template-parts/language_switch.php:16
+msgid "Lejuplādēt katalogu"
+msgstr "Download catalogue"
+
+#: template-parts/products_components.php:2
+#: template-parts/products_components.php:3 template-parts/products_head.php:32
+msgid "Linsēklu eļļa"
+msgstr "Linseed oil"
+
+#: template-parts/products_components.php:5
+#: template-parts/products_components.php:6 template-parts/products_head.php:36
+msgid "Īpaša karsēšanas tehnoloģija"
+msgstr "Advanced heating technolgy"
+
+#: template-parts/products_components.php:8
+#: template-parts/products_components.php:9 template-parts/products_head.php:40
+msgid "Kalifonijs"
+msgstr "Rosin"
+
+#: template-parts/products_components.php:11
+#: template-parts/products_components.php:12
+#: template-parts/products_head.php:44
+msgid "Dabīgie minerāl- pigmenti"
+msgstr "Natural mineral pigments"
+
+#: template-parts/products_components.php:14
+#: template-parts/products_components.php:15
+#: template-parts/products_head.php:48
+msgid "Dabīgās pildvielas"
+msgstr "Naural binder"
+
+#: template-parts/products_components.php:17
+#: template-parts/products_components.php:18
+#: template-parts/products_head.php:52
+msgid "Vasks"
+msgstr "Beeswax"
+
+#: template-parts/social_links.php:1
+msgid "Mēs sociālajos tīklos"
+msgstr "Meet us in social networks"
+
+#: template-products.php:17
+msgid "Dabīgās sastāvdaļas"
+msgstr "Natural ingredients"
+
+#~ msgid "Komanda"
+#~ msgstr "Team"
+
+#~ msgid "Pētniecība"
+#~ msgstr "Research"
+
+#~ msgid "ES Projekti"
+#~ msgstr "EU projects"
+
+#~ msgid "Atsauksmes"
+#~ msgstr "Testimonial"
+
+#~ msgid "Sadarbības partneri"
+#~ msgstr "Partners"
+
+#~ msgid "Aprēķina kalkulators"
+#~ msgstr "Consumption calculator"
+
+#~ msgid "Apdares dēlis"
+#~ msgstr "Facade timber"
+
+#~ msgid "Apaļkoks"
+#~ msgstr "Log"

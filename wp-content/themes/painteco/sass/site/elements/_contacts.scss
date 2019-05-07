@@ -1,0 +1,96 @@
+.contacts-info {
+  @include font-size(1.4);
+  line-height: 1.8em;
+  padding-left: 110px;
+
+  .em {
+    @include font-size(1.6);
+  }
+
+  strong {
+    @include font-size(1.6);
+  }
+
+  &:before {
+    position: absolute;
+    content:"";
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: url("images/contacts-items.png") no-repeat;
+    margin-left: -97px;
+    @include tablet-portrait-down {
+      margin-left: -93px;
+    }
+  }
+
+  &.address {
+    @include tablet-portrait-down {
+      padding-left: 77px;
+    }
+  }
+
+  &.working-hours {
+    padding-left: 77px;
+    &:before {
+      width: 57px;
+      background-position: -92px 0;
+      margin-left: -77px;
+    }
+  }
+
+  &.bank {
+    padding-left: 73px;
+    &:before {
+      width: 53px;
+      background-position: -152px 0;
+      margin-left: -73px;
+    }
+  }
+
+}
+
+.map-container {
+  height:600px;
+}
+
+.distributors {
+  h4 {
+    @include font-size(1.8);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 12px;
+  }
+
+  .team-members-list {
+    margin-top: 40px;
+  }
+
+  .team-members-list-item {
+    margin-bottom: 50px;
+
+    @include tablet-portrait-down {
+      margin-bottom: -10px;
+    }
+
+    h4 {
+      img {
+        background: transparent;
+        padding: 0;
+      }
+    }
+  }
+
+  .team-members-list-item:nth-child(3n+1) {
+    clear: left;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: darken(#fff, 10%);
+    }
+  }
+}

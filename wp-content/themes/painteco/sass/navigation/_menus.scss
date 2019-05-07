@@ -1,0 +1,289 @@
+$menu_height: 75px;
+
+.main-navigation {
+
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	height: $menu_height;
+	margin-top: 65px;
+
+	@include tablet-portrait-down {
+		margin-top: -72px;
+	}
+
+	@include mobile-landscape-down {
+		margin-top: -32px;
+	}
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+		float: right;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	
+	li {
+		display: table-cell;
+		vertical-align: middle;
+		float:left;
+		position: relative;
+
+		@include tablet-portrait-down {
+			display: block;
+			vertical-align: middle;
+			text-align: center;
+			float: none;
+			padding-left: 0;
+		}
+
+		line-height: $menu_height;
+		padding-left: 40px;
+
+		@include tablet-landscape-down {
+			padding-left: 15px;
+		}
+
+		text-transform: uppercase;
+
+		&:hover > a,
+		&.focus > a {
+
+			&:after {
+				content: "";
+				display: block;
+				margin: -20px auto 0;
+				height: 2px;
+				width: 35px;
+				background: #fff;
+			}
+
+		}
+	}
+	
+	a {
+		display: block;
+		text-decoration: none;
+		color: #fff;
+		@include font-size(1.8);
+		font-weight: 400;
+
+		@include tablet-landscape-down {
+			@include font-size(1.5);
+		}
+
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current-page-ancestor > a,
+	.current-menu-ancestor > a {
+
+		&:after {
+			content: "";
+			display: block;
+			margin: -20px auto 0;
+			height: 2px;
+			width: 40px;
+			background: #fff;
+		}
+
+	}
+}
+
+/* Small menu. */
+.btn-default:active:hover,
+.btn-default:active:focus,
+.btn-default:active.focus,
+.btn-default.active:hover,
+.btn-default.active:focus,
+.btn-default.active.focus,
+.open>.btn-default.dropdown-toggle:hover,
+.open>.btn-default.dropdown-toggle:focus,
+.open>.btn-default.dropdown-toggle.focus {
+	color: #fff;
+	background-color: rgba(0,0,0,0.4);;
+	border-color: transparent;
+}
+
+.menu-toggle:active,
+.menu-toggle:focus,
+.menu-toggle:hover,
+.menu-toggle {
+	display: block;
+	border: 1px solid transparent;
+	@include border-radius(4);
+	background: rgba(0,0,0,0.4);
+	box-shadow: none;
+	color: #fff;
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 1;
+	padding: 7px 12px;
+	text-shadow: none;
+	z-index: 100000;
+	position: relative;
+}
+
+.main-navigation.toggled ul {
+	position: absolute;
+	display: block;
+	background: rgba(0,0,0,0.8);
+	z-index: 145;
+	margin: 0;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-top: 40px;
+	@include border-radius(5);
+	width: 100%;
+	padding:0;
+}
+
+@media screen and (min-width: 992px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+@media screen and (max-width: 991px) {
+	.main-navigation {
+		background: transparent;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
+$page-nav-height: 63px;
+
+.page-navigation {
+	background: #fff;
+	min-height: $page-nav-height;
+}
+
+.page-navigation .submenu {
+	display: table;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+  &.narrow {
+    width: auto !important;
+    margin: 0 auto;
+    li a {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.page-navigation {
+	.container {
+		@include tablet-landscape-down {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			.row {
+				margin: 0;
+				.col-sm-12 {
+					padding-left: 0;
+					padding-right: 0;
+					.narrow {
+						width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+.page-navigation .submenu li {
+
+  display: table-cell;
+  text-align: center;
+  min-height: $page-nav-height;
+  line-height: $page-nav-height;
+
+  @include tablet-landscape-down {
+    display: block;
+  	padding: 0;
+  	margin: 0;
+  }
+}
+
+.page-navigation .submenu li a {
+	display: block;
+	color: #474746;
+	font-weight: 700;
+	@include font-size(1.4);
+	text-transform: uppercase;
+	outline: none;
+
+	&:hover {
+		background: #aeafaf;
+		text-decoration: none;
+	}
+}
+
+

@@ -1,0 +1,36 @@
+.page-section-title {
+  @include font-size(3.0);
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  margin-bottom: 20px;
+
+  .team & {
+    margin-top: 60px;
+    letter-spacing: 0.05em;
+  }
+
+  .map & {
+    margin-bottom: 40px;
+  }
+
+  .distributors & {
+    margin-top: 80px;
+  }
+
+  .components & {
+    @include font-size(3.0);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+  }
+}
+
+.page {
+  h1.entry-title {
+    text-transform: uppercase;
+    @include font-size(2.6);
+    font-weight: 400;
+    line-height: 1.2em;
+    color: #363635;
+  }
+}

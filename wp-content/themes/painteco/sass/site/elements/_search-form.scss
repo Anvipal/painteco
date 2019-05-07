@@ -1,0 +1,41 @@
+.search-form {
+
+  margin-left: 20px;
+
+  label {
+    margin: 0;
+  }
+
+  .input-group-addon, .input-group-btn {
+    width: auto;
+  }
+
+  input[type="search"] {
+    background: #656565;
+    height: 35px;
+    border-radius: 0;
+    border:0;
+    @include font-size(1.2);
+    padding-left: 10px;
+    width: 160px;
+
+    @include tablet-portrait-down {
+      width: 250px;
+    }
+
+    box-shadow: none;
+    color: #fff;
+  }
+
+  button[type="submit"] {
+    color: #c3c3c3;
+    background: #4d4d4d;
+    height: 35px;
+    border-radius: 0;
+    border:0;
+    @include font-size(1.4);
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+}

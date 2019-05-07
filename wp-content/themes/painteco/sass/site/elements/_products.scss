@@ -1,0 +1,273 @@
+.products-list {
+
+  .product-item {
+    background: #fff;
+    margin-bottom: 60px;
+    padding: 8px;
+    @include border-radius(8);
+    @include shadow();
+
+    a.darken {
+      @include border-radius(8);
+    }
+
+    img {
+      @include border-radius(8);
+      border: 1px solid #e1e1e1;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      @include font-size(1.8);
+      font-weight: 700;
+      line-height: 1.2em;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      min-height: 42px;
+      display: table;
+      text-align: center;
+      width:100%;
+
+      a {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: #4d4d4d;
+        text-decoration: none;
+        &:hover {
+          color: darken(#4d4d4d, 20%);
+        }
+      }
+    }
+
+  }
+
+}
+
+.product-options {
+  margin-top: 80px;
+
+  @include tablet-portrait-down {
+    margin-top: 30px;
+  }
+
+  .certificates {
+    text-align: left;
+    margin-top: -7px;
+    padding-left: 0;
+
+    ul {
+      margin-left: 0 !important;
+    }
+
+    li {
+      background: url("images/certificates.png") no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      width: 65px;
+      height: 65px;
+      margin-left: 0;
+      margin-right: 20px;
+      padding:0;
+    }
+    li.b {
+      background-position: -65px 0;
+    }
+    li.c {
+      background-position: -130px 0;
+    }
+  }
+
+}
+
+.product-title {
+  @include font-size(2.8);
+  font-weight: 700;
+  color: #2f2f2f;
+  text-transform: uppercase;
+  margin-top:0;
+  padding: 8px 0 8px 30px;
+  @include border-radius(8);
+  margin-bottom: 30px;
+
+  &.product-type-oil {
+    background: $color__oil;
+    background: -webkit-linear-gradient(left, $color__oil, transparent);
+    background: -o-linear-gradient(right, $color__oil, transparent);
+    background: -moz-linear-gradient(right, $color__oil, transparent);
+    background: linear-gradient(to right, $color__oil, rgba($color__oil, 0.001) 100%);
+  }
+
+  &.product-type-pickle {
+    background: $color__pickle;
+    background: -webkit-linear-gradient(left, $color__pickle, transparent);
+    background: -o-linear-gradient(right, $color__pickle, transparent);
+    background: -moz-linear-gradient(right, $color__pickle, transparent);
+    background: linear-gradient(to right, $color__pickle, rgba($color__pickle, 0.001) 100%);
+  }
+
+  &.product-type-color {
+    background: $color__color;
+    background: -webkit-linear-gradient(left, $color__color, transparent);
+    background: -o-linear-gradient(right, $color__color, transparent);
+    background: -moz-linear-gradient(right, $color__color, transparent);
+    background: linear-gradient(to right, $color__color, rgba($color__color, 0.001) 100%);
+  }
+
+  &.product-type-vax {
+    background: $color__vax;
+    background: -webkit-linear-gradient(left, $color__vax, transparent);
+    background: -o-linear-gradient(right, $color__vax, transparent);
+    background: -moz-linear-gradient(right, $color__vax, transparent);
+    background: linear-gradient(to right, $color__vax, rgba($color__vax, 0.001) 100%);
+  }
+
+  &.product-type-other {
+    background: $color__other;
+    background: -webkit-linear-gradient(left, $color__other, transparent);
+    background: -o-linear-gradient(right, $color__other, transparent);
+    background: -moz-linear-gradient(right, $color__other, transparent);
+    background: linear-gradient(to right, $color__other, rgba($color__other, 0.001) 100%);
+  }
+
+}
+
+.product-featured-image {
+  @include border-radius(6);
+  background: rgba(0,0,0,0.15);
+  padding: 8px;
+
+  img {
+    @include border-radius(6);
+  }
+}
+
+.products-sidebar-menu {
+  background: rgba(0,0,0,0.15);
+  @include border-radius(10);
+  margin:0;
+  padding: 15px 0;
+
+  @include tablet-portrait-down {
+    margin-bottom: 20px;
+  }
+
+  li {
+    @include font-size(1.4);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    &.oil:hover,
+    &.oil.active {
+      background: $color__oil;
+    }
+    &.pickle:hover,
+    &.pickle.active {
+      background: $color__pickle;
+    }
+    &.color:hover,
+    &.color.active {
+      background: $color__color;
+    }
+    &.vax:hover,
+    &.vax.active {
+      background: $color__vax;
+    }
+    &.other:hover,
+    &.other.active {
+      background: $color__other;
+    }
+
+    a {
+      display: block;
+      color: #474746;
+      padding-left: 20px;
+      padding-right: 80px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.calc {
+  @include font-size(1.2);
+  font-weight: 400;
+  display: inline-block;
+  background: url("images/calc.png") no-repeat 5% center, rgba(#4c4d4f,0.8);
+  border-radius: 0;
+  border: none;
+  line-height: 60px;
+  height: 60px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  padding: 0 15px 0 60px;
+  &:hover {
+    background: url("images/calc.png") no-repeat 5% center, rgba(#4c4d4f,0.9);
+  }
+}
+
+.product-color-picker {
+  margin-top: 20px;
+
+  @include tablet-portrait-down {
+    margin-bottom: 30px;
+  }
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  .col-xs-3 {
+    padding: 0;
+  }
+
+  .color {
+    margin: 4px 3px;
+    height: 40px;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+
+    .color-info {
+      display: none;
+      margin-top: 45px;
+      margin-left: -75px;
+      border: 1px solid #c1c2c2;
+      position: absolute;
+      z-index: 7;
+      background: inherit;
+      width: 255px;
+      height: 205px;
+      cursor: pointer;
+
+      @include tablet-portrait {
+        margin-left: -95px;
+      }
+
+      span {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: block;
+        background: #fff;
+        height: 32px;
+        line-height: 32px;
+        @include font-size(1.4);
+        padding-left: 10px;
+      }
+    }
+  }
+
+}
+
+.product-body {
+  .entry-content {
+    padding: 30px 100px;
+    @include tablet-portrait-down {
+      padding: 0 5px;
+    }
+  }
+}

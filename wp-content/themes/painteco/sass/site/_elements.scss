@@ -1,0 +1,150 @@
+/* Remove outline form links */
+a {
+  outline: none !important;
+}
+
+/* WP included images with rounded borders and shadow */
+img[class*="wp-image-"] {
+  @include border-radius(8);
+  @include shadow();
+}
+
+/* White / basic content box */
+
+.content-box {
+  @include shadow();
+  @include border-radius(8);
+  background: #fff;
+}
+
+/** Readmore button */
+
+.read-more {
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  color: #fff !important;
+  text-transform: uppercase;
+  @include font-size(1.2);
+  font-weight: bold;
+
+  @include tablet-portrait {
+    padding: 10px 10px;
+  }
+
+  &:hover {
+    background: #000;
+    border:1px solid #000;
+    text-decoration: none;
+  }
+
+  .glyphicon-play {
+    padding-left: 25px;
+
+    @include tablet-portrait {
+      padding-left: 15px;
+    }
+
+  }
+
+  &.dark {
+    color: #4c4d4f !important;
+    border: 2px solid #4c4d4f;
+    text-decoration: none !important;
+
+    &:hover {
+      color: #fff !important;;
+      background: #4c4d4f;
+    }
+
+  }
+
+  &.bottom {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  &.blog {
+    border: none !important;
+    color: #4c4d4f !important;
+    padding-left: 0;
+    &:hover {
+      color: rgba(#4c4d4f, 0.8) !important;
+      background: transparent;
+    }
+  }
+}
+
+/** Navigation arrows for slider **/
+
+.nav-slide {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("images/nav-slide.png") no-repeat;
+  outline: none;
+
+  &.next {
+    background-position: -32px 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/** Pagionation **/
+
+.pagination {
+  @include font-size(1.4);
+  border: none;
+
+  li a {
+    color: #4c4d4f;
+    border: none;
+  }
+
+  li.active a {
+    background: #898989;
+    &:hover {
+      background: #898989;
+    }
+  }
+}
+
+/** Back button **/
+.btn-back {
+  @include font-size(1.2);
+  font-weight: 400;
+  display: inline-block;
+  background: url("images/btn-back.png") no-repeat 15% center, rgba(#1d1e1f,0.8);
+  border-radius: 0;
+  border: none;
+  line-height: 40px;
+  height: 40px !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  padding: 0 20px 0 50px;
+  &:hover {
+    background: url("images/btn-back.png") no-repeat 15% center, rgba(#1d1e1f,0.9);
+  }
+  @include tablet-landscape-down {
+    margin: 0 0 20px 0;
+  }
+}
+
+
+/** Image helper classes **/
+
+.img-shadow {
+  @include shadow();
+}
+
+.img-border-round {
+  @include border-radius(6);
+}
+
+.img-reset {
+  @include no-border-radius();
+  @include no-shadow();
+}

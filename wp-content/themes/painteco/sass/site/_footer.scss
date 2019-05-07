@@ -1,0 +1,166 @@
+.site-footer {
+  padding-top: 60px;
+  padding-bottom: 15px;
+  background: url("images/footer-bg.jpg") repeat;
+}
+
+.social,
+.contact-information,
+.site-footer a {
+  color: #a5a5a5;
+  font-weight: 300;
+}
+
+.site-footer a {
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.contact-information {
+  margin-left: 0;
+  @include font-size(1.4);
+
+  h4 {
+    text-transform: uppercase;
+    @include font-size(1.2);
+    font-weight: 300;
+    margin-bottom: 7px;
+  }
+
+  p.phone, p.email {
+    @include font-size(1.8);
+    margin:0;
+  }
+
+  li {
+    margin-bottom: 1.5em;
+    position: relative;
+    padding-left: 60px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 38px;
+      background: url("images/contact.png");
+      position: absolute;
+      margin-left: -60px;
+    }
+  }
+
+  li.address {
+    &::before {
+      height: 57px;
+      background-position: 0 0;
+    }
+  }
+
+  li.phone {
+    &::before {
+      height: 26px;
+      background-position: 0 -96px;
+    }
+  }
+
+  li.email {
+    &::before {
+      height: 17px;
+      background-position: 0 -164px;
+    }
+
+  }
+
+}
+
+.company-name {
+  font-weight: 700;
+}
+
+.footer-menu {
+
+  @include font-size(1.2);
+  margin-bottom: 25px;
+
+  h4 {
+    margin-top: 0;
+    @include font-size(1.2);
+    text-transform: uppercase;
+    border-bottom: 1px solid #555555;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+
+    &.no-border {
+      border-bottom: 0;
+    }
+  }
+
+  .footer-menu-items {
+    margin:0;
+    padding:0;
+
+  }
+
+}
+
+.social {
+  p {
+    @include font-size(1.2);
+  }
+  @include mobile-landscape-down {
+    margin-top: 20px;
+  }
+}
+
+.social-networks {
+
+  li {
+    width: 43px;
+    height: 45px;
+    background: url("images/social.png") no-repeat;
+    margin-right: 4px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  li.youtube {
+    background-position: 0 0;
+  }
+
+  li.facebook {
+    background-position: -47px 0;
+  }
+
+  li.twitter {
+    background-position: -93px 0;
+  }
+
+  li.linkedin {
+    background-position: -139px 0;
+  }
+
+
+  li a {
+    display: block;
+    height:100%;
+  }
+
+  li.search-item {
+    display: none;
+    background: none;
+    margin-left: -23px;
+    input, button {
+      height: 45px;
+    }
+
+    @include tablet-portrait-down {
+      display: block;
+      width: 100%;
+      margin-top: 8px;
+    }
+
+  }
+
+}

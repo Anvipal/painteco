@@ -1,0 +1,114 @@
+#modelContainer {
+    display: inline-block;
+    position: relative;
+    width: 800px;
+    height: 537px;
+}
+#modelContainer div {
+    width: 800px;
+    height: 537px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tab-content, .nav-tabs {
+    font-size: 14px;
+}
+
+.form-group label {
+    font-size: 13px;
+}
+
+.form-field {
+    height: 30px;
+    font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-field {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .form-field {
+        float: right;
+        width: 75px;
+    }
+}
+
+.pattern {
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.pattern li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.pattern-switch {
+    padding-top: 20px;
+}
+
+.pattern a {
+    cursor: pointer;
+}
+
+.partners {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.partners .partner-logo {
+    padding-top: 30px;
+}
+
+.gallery-title {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+}
+
+.single-painteco_galleries .gallery-images {
+    margin-top: 0;
+    padding-top: 85px;
+}
+
+.single-painteco_galleries .gallery-images .gallery-nav {
+    text-align: right;
+}
+
+.submenu li.active a,
+.submenu li.current-menu-item a {
+    text-decoration: underline;
+}
+
+.main-navigation .current-post-parent > a:after,
+.main-navigation .current-menu-parent > a:after,
+.main-navigation .current-post-ancestor > a:after {
+    content: "";
+    display: block;
+    margin: -20px auto 0;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+}
+
+.lang-switch a {
+    color: white;
+}
+.lang-switch {
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    color: white !important;
+}
+.lang-switch span {
+    padding-left: 5px;
+}

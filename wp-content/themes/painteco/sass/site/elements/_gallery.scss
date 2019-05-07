@@ -1,0 +1,119 @@
+.gallery-list {
+
+  .gallery-item {
+    background: #fff;
+    margin-bottom: 60px;
+    padding: 8px;
+    @include border-radius(8);
+    @include shadow();
+
+    a.darken {
+      @include border-radius(8);
+    }
+
+    img {
+      @include border-radius(8);
+    }
+
+    h2 {
+      text-transform: uppercase;
+      @include font-size(1.8);
+      font-weight: 700;
+      line-height: 1.2em;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      min-height: 42px;
+      display: table;
+      text-align: center;
+      width:100%;
+
+      a {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: #4d4d4d;
+        text-decoration: none;
+        &:hover {
+          color: darken(#4d4d4d, 20%);
+        }
+      }
+    }
+
+  }
+
+}
+
+.gallery-title {
+  text-align: right;
+  text-transform: uppercase;
+  @include font-size(1.8);
+  font-weight: 700;
+  color: #4d4d4d;
+  min-height: 40px;
+  line-height: 40px;
+  margin:0 0 30px 0;
+  padding:0;
+
+  @include tablet-landscape-down {
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+}
+
+.gallery-image.col-sm-4 {
+  padding: 7px;
+}
+
+.gallery-images-cnt {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.gallery-image-thumb {
+  position: relative;
+
+  img {
+    @include border-radius(8);
+  }
+
+  a {
+    @include border-radius(8);
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    background: rgba(0,0,0,0);
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    @include font-size(1.6);
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 30px;
+    text-decoration: none;
+    overflow: auto;
+
+    span {
+      display: none;
+      line-height: 1.5em;
+      position: relative;
+      text-align: center;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    &:hover{
+      background: rgba(0,0,0,0.5);
+      span {
+        display: block;
+      }
+    }
+  }
+
+}

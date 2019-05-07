@@ -1,0 +1,8 @@
+.fancybox-inner .fancybox-image {
+  @include border-radius(8);
+  border: 1px solid #aeafaf;
+}
+
+.fancybox-nav span {
+  visibility: visible;
+}

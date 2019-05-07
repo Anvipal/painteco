@@ -1,0 +1,190 @@
+body {
+  background: url("images/wooden-bg.png") repeat;
+}
+
+.home.front-page {
+  .banner {
+    margin-top: 60px;
+    @include mobile-landscape-down {
+      margin-top: 20px;
+    }
+  }
+  .paint-options {
+    margin-top: 60px;
+    @include tablet-portrait-down {
+      margin-top: 20px;
+    }
+
+    @include mobile-landscape-down {
+      margin-top: 0;
+    }
+    p {
+      @include font-size(2.4);
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $color__text-main;
+      line-height: 92px;
+
+      @include tablet-landscape-down {
+        @include font-size(2.2);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        line-height: normal;
+      }
+
+      @include tablet-portrait-down {
+        @include font-size(1.8);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        line-height: 60px;
+      }
+
+      @include mobile-landscape-down {
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+
+    }
+  }
+  .paint-products {
+    margin-top: 20px;
+  }
+  .news {
+     margin-top: 60px;
+     background: rgba(0,0,0,0.4);
+   }
+  .tools {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include mobile-landscape-down {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    @include tablet-portrait {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page {
+  .philosophy {
+    margin-top: 60px;
+    .col-md-push-6 {
+      padding-bottom: 30px;
+    }
+  }
+  .why {
+    margin-top: 40px;
+  }
+  .team {
+    margin-top: 80px;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+  }
+  .research {
+    margin-top: 60px;
+  }
+  .projects {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+  .testimonial-slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #fff;
+  }
+  .contacts {
+    margin-top: 85px;
+  }
+  .map {
+    margin-top: 30px;
+  }
+  .distributors {
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    padding-bottom: 60px;
+  }
+  .products-list {
+    margin-top: 50px;
+  }
+  .products-list-paint-options {
+    margin-top: 50px;
+  }
+  .components {
+    margin-top: 85px;
+  }
+}
+
+.blog {
+  .news {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+.category {
+  .articles {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+.search {
+  .articles {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+.single-post-body {
+  .single-post {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .content-box {
+    padding: 20px 50px;
+    @include mobile-landscape-down {
+      padding: 20px;
+    }
+  }
+}
+
+.page {
+  @extend .single-post-body;
+}
+
+.single {
+  @extend .single-post-body;
+}
+
+.search {
+  .content-box {
+    padding: 20px 50px;
+    @include mobile-landscape-down {
+      padding: 20px;
+    }
+  }
+}
+
+.single-painteco_product {
+  .single-post {
+    margin-top: 30px;
+  }
+}
+
+.tax-painteco_gallery_category {
+  .gallery-list {
+    margin-top: 100px;
+    padding-bottom: 40px;
+  }
+}
+
+.single-painteco_galleries {
+  .gallery-images {
+    margin-top: 100px;
+    padding-bottom: 80px;
+    @include tablet-portrait-down {
+      margin-top: 40px;
+    }
+  }
+}

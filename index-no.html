@@ -1,0 +1,232 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css?rnd=25r38" type="text/css" />
+<link rel="stylesheet" href="css/LinkTopMenu.css" type="text/css" />
+<!--[if IE 6]>
+<link rel="stylesheet" href="css/style-ie6.css" type="text/css" />
+<link rel="stylesheet" href="css/LinkTopMenu-ie6.css" type="text/css" />
+<![endif]-->
+	<meta name="keywords" content="PAINT ECO PRODUKTI,Linellas pernica,GAISA LINELLAS PERNICA,Linellas pernica gridu ellosanai ,Beice,Krasas,VASKS,Citi produkti,Akcijas">
+	<meta NAME="description" content="PAINT ECO PRODUKTI,Linellas pernica,GAISA LINELLAS PERNICA,Linellas pernica gridu ellosanai ,Beice,Krasas,VASKS,Citi produkti,Akcijas">
+	<meta NAME="target" content=" ">
+
+	<link rel="shortcut icon" href="/favicon.ico" />	
+
+	<script type="text/javascript" src="/js/swfobject2.js"></script>
+	<script type="text/javascript" src="/js/fixflash.js"></script>
+	<script type="text/javascript" src="/js/pngfix.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fancybox/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="/jquery.fancybox/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="/js/libs/jquery/jquery.numeric.js"></script>
+	<script type="text/javascript" src="/jquery.fancybox/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/jquery.fancybox/jquery.fancybox-1.2.1.pack.js"></script>
+	
+	<link rel="stylesheet" href="css/HtmlBlock.css" type="text/css" />
+
+	<!--[if IE 6]>
+<link rel="stylesheet" href="css/HtmlBlock-ie6.css" type="text/css" />
+<![endif]-->
+
+	<link rel="stylesheet" href="css/HtmlSmallBlock.css" type="text/css" />
+
+	<!--[if IE 6]>
+<link rel="stylesheet" href="css/HtmlSmallBlock-ie6.css" type="text/css" />
+<![endif]-->
+
+	<link rel="stylesheet" href="/js/libs/jquery/jQPopup/css/jqpopup.css" type="text/css" />
+
+	<link rel="stylesheet" href="/css/palette.css?_rand=1400613846" type="text/css" />
+	
+	<script type="text/javascript" src="/js/libs/jquery/jQPopup/js/jquery.bgiframe.min.js"></script>
+
+	<script type="text/javascript" src="/js/libs/jquery/jQPopup/js/jqDnR.min.js"></script>
+
+	<script type="text/javascript" src="/js/libs/jquery/jQPopup/js/jquery.jqpopup.min.js"></script>
+
+	<script type="text/javascript" src="/inc/flowplayer/example/flowplayer-3.2.4.min.js"></script>
+
+	<script type="text/javascript" src="/inc/flowplayer/example/flowplayer.embed-3.0.3.min.js"></script>
+	<title>painteco.eu </title>
+			
+<!--[if lte IE 6]>
+<style type="text/css">
+	img {behavior:url("pngbehavior.htc");}
+</style>
+<![endif]-->
+<script type="text/javascript">
+    window.ie = (/MSIE/.test(navigator.userAgent));
+    window.fancy_sazinies_ar_mums_on = false;
+    window.fancy_izbraukuma_konsultacija_on = false;
+
+    $(document).ready(function() {
+        $("a.fancy-sazinies-ar-mums").fancybox({
+            titleShow : false,
+            padding : 7,
+            transitionIn: 'elastic',
+            transitionOut: 'elastic',
+            speedIn : 30,
+            speedOut :30,
+            overlayOpacity: 0.9,
+            overlayColor: '#000000',
+            hideOnContentClick : false,
+            frameWidth : 588,	/* was 250, so +82*/
+            frameHeight : 550,
+            type:'inline' ,
+            callbackOnStart : function() {
+                window.fancy_sazinies_ar_mums_on = false;
+            },
+            callbackOnShow : function() {
+                if(!window.fancy_sazinies_ar_mums_on) {
+                    var diff = 17;
+                    if(($('#fancy_outer').height() - diff)> $('#mainframe3').height()) {
+                        var newval = $('#mainframe3').height() + ($('#fancy_outer').height() - $('#mainframe3').height() - diff);
+                        $('#mainframe3').height(newval);
+                    }
+                    else {
+                        var newval = $('#mainframe3').height() + diff;
+                        $('#fancy_outer').height(newval);
+                    }
+                    window.fancy_sazinies_ar_mums_on = true;
+                }
+            }
+        });
+        $("a.fancy-izbraukuma-konsultacija").fancybox({
+            titleShow : false,
+            padding : 7,
+            transitionIn: 'elastic',
+            transitionOut: 'elastic',
+            speedIn : 30,
+            speedOut :30,
+            overlayOpacity: 0.9,
+            overlayColor: '#000000',
+            hideOnContentClick : false,
+            frameWidth : 588,
+            frameHeight : 550,
+            type:'inline' ,
+            callbackOnStart : function() {
+                window.fancy_izbraukuma_konsultacija_on = false;
+            },
+            callbackOnShow : function() {
+                if(!window.fancy_izbraukuma_konsultacija_on) {
+                    var diff = 17;
+                    if(($('#fancy_outer').height() - diff)> $('#mainframe4').height()) {
+                        var newval = $('#mainframe4').height() + ($('#fancy_outer').height() - $('#mainframe4').height() - diff);
+                        $('#mainframe4').height(newval);
+                    }
+                    else {
+                        var newval = $('#mainframe4').height() + diff;
+                        $('#fancy_outer').height(newval);
+                    }
+                    window.fancy_izbraukuma_konsultacija_on = true;
+                }
+            }
+        });
+    });
+</script></head>
+<body>
+	<div class="wrapper">
+	<div class="top-bg"></div>
+	<table border="0" cellspacing="0" cellpadding="0" width="100%">
+		<tr>
+			<td align="center">
+				<table border="0" cellspacing="0" cellpadding="0" width="994px">
+					<tr>
+						<td align="left">				
+				
+		
+		<!-- head-line -->
+		<div id="head-top">
+			<div id="head-left">
+			<a href="index-no.html"><img  src="design/painteco/logo.png"  class="logo" border="0" width="86" height="128" /></a>
+			<div id="head-right" align="right">
+				
+<div style="padding:20px 30px 0 0;">
+
+<a href="/index.php?l=lat&s=main" style="text-decoration:none;" >LV</a>
+<span   class="strip">|</span>
+
+<a href="/index.php?l=eng&s=main" style="text-decoration:none;" >EN</a>
+<span   class="strip">|</span>
+
+<a href="/index.php?l=rus&s=main" style="text-decoration:none;" >RU</a>
+<span   class="strip">|</span>
+
+<a href="/index.php?l=ger&s=main" style="text-decoration:none;" >DE</a>
+<span   class="strip">|</span>
+
+<a href="/index.php?l=swe&s=main" style="text-decoration:none;" >SE</a>
+<span   class="strip">|</span>
+
+<a href="/index-no.html" style="text-decoration:none;" >NO</a>	
+<span   class="strip">|</span>
+
+<a href="/index-fr.html" style="text-decoration:none;" >FR</a>
+				
+</div>
+				<div class="tools" style="padding:5px 45px 0 0;">
+				<a href="http://www.draugiem.lv/painteco/" style="text-decoration:none;" ><img src="/design/painteco/dr.2.5.png" alt="" class="draugiem" /></a><span   class="strip"></span><a href="http://www.facebook.com/PaintEco" style="text-decoration:none;" ><img src="/design/painteco/fb2.5.png" class="facebook" alt="" /></a><span   class="strip"></span><a href="http://twitter.com/PaintEco" style="text-decoration:none;" ><img src="/design/painteco/twit2.5.png" class="twitter" alt="" /></a>				</div>				
+			</div>			
+			<div id="head-menu">
+				
+			</div>
+		</div>
+		<!-- head-line-end -->    
+
+		
+		
+					<div>
+        	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+				<td valign="top" height="60" class="sub-left">
+				                </td>
+                <td width="100%" valign="top">
+					<div class="center-content-margin">
+										
+  
+					</div>
+                </td>
+				<td valign="top" class="sub-right">
+				                </td>
+              </tr>
+            </table><br><br><br><br><br><br><br><br>
+
+<a href="PAINT_ECO_NO-small.pdf" style="color:#666666;">PAINT ECO PDF catologue NO <img src="design/painteco/pdf_icon.png"/></a>			
+		</div>		
+				
+		<!-- sub-products-end -->
+		<!-- footer -->
+		<!--<div id="footer" class="footer">© PAINT ECO 2010</div>-->
+		<!-- footer-end -->          
+
+								</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+		<div class="push"></div>
+	</div>
+	<div class="footer"><div id="footer">© PAINT ECO 2010</div></div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40161395-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</html>
+		
