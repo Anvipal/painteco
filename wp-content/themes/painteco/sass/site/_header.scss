@@ -1,8 +1,6 @@
 
 .logo {
-  @include tablet-landscape-up {
-    position: absolute;
-  }
+  position: absolute;
   z-index: 5;
   top: 0;
   //left: 0;
@@ -21,7 +19,6 @@
   }
 
   @include mobile {
-    position: relative;
     width: 100px;
     margin-left: 0;
   }
@@ -34,12 +31,17 @@
 
 .preheader {
   background-color: white;
+  a {
+    color: $color__text-main;
+  }
+}
+
+.header-call-link {
+  float: right;
+  margin-right: 30px;
   .glyphicon {
     line-height: 39px;
     font-size: 2em;
-  }
-  a {
-    color: $color__text-main;
   }
 }
 
@@ -194,15 +196,8 @@
 }
 
 .default-site-header {
-  background: url("images/page-header-bg.jpg");
-  background-size: cover;
-  height: 500px;
-  max-height: 500px;
-
-  @media screen and (max-width: 1366px) {
-    height: 375px;
-    max-height: 375px;
-  }
+  height: 200px;
+  max-height: 200px;
 
   @include mobile-landscape-down {
     height: 175px;
@@ -215,8 +210,12 @@
     @extend .default-site-header;
     background: url("images/home-header-bg.jpg");
     background-size: cover;
+    background-position: center;
     height: auto;
     max-height: none;
+  }
+  .site-branding {
+    min-height: calc(100vh - 150px);
   }
 }
 
