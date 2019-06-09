@@ -15,16 +15,14 @@ get_header(); ?>
             <?php get_template_part('template-parts/about_submenu')?>
 
             <?php get_template_part('template-parts/about_philosophy')?>
-            
+
             <?php get_template_part('template-parts/about_why')?>
 
             <?php get_template_part('template-parts/about_team')?>
 
-            <?php get_template_part('template-parts/about_research')?>
+            <!-- ?php get_template_part('template-parts/about_research')? -->
 
             <?php get_template_part('template-parts/about_projects')?>
-
-            <?php get_template_part('template-parts/about_testimonial')?>
         </main><!-- #main -->
     </div><!-- #primary -->
 
