@@ -25,6 +25,8 @@ get_header(); ?>
 
             <?php get_template_part('template-parts/front_page_tools'); ?>
 
+            <?php get_template_part('template-parts/front_page_gallery')?>
+
             <?php get_template_part('template-parts/front_page_testimonial')?>
 
             <?php get_template_part('template-parts/front_page_news'); ?>
