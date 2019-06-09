@@ -35,6 +35,20 @@
 
 <?php wp_head(); ?>
 
+<style>
+	.home.front-page .site-branding {
+	  min-height: calc(100vh - 150px);
+	}
+	.home.front-page .site-header {
+		background-position: center;
+	}
+	.page .site-header {
+		background: none;
+		height: 200px;
+		max-height: 200px;
+	}
+</style>
+
 </head>
 <body <?php body_class((is_front_page() ? 'front-page':'')); ?>>
 <div id="page" class="site">
@@ -42,7 +56,6 @@
 
 	<?php global $headBackground; ?>
 	<header id="masthead" class="site-header" role="banner"<?php if (isset($headBackground) && $headBackground): ?> style="background: url('<?php echo $headBackground; ?>')"<?php endif; ?>>
-
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-xs-4">
@@ -71,7 +84,7 @@
 		<div class="site-branding">
 		<?php if ( is_front_page() ) : ?>
 			<div class="container">
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-sm-5">
 						<div class="slogan">
 							<div class="what-is">
@@ -97,7 +110,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		<?php endif; ?>
 		</div><!-- .site-branding -->
