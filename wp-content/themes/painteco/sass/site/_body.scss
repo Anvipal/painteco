@@ -2,6 +2,10 @@ body {
   background: url("images/wooden-bg.png") repeat;
 }
 
+.site-branding {
+  min-height: calc(100vh - 150px);
+}
+
 .home.front-page {
   .banner {
     margin-top: 60px;
@@ -100,8 +104,6 @@ body {
     margin-top: 30px;
   }
   .distributors {
-    background: rgba(0,0,0,0.4);
-    color: #fff;
     padding-bottom: 60px;
   }
   .products-list {

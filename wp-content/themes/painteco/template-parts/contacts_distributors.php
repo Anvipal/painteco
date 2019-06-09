@@ -18,12 +18,10 @@
 
                         <?php foreach($distributors as $distributor) :?>
                             <div class="col-sm-4 team-members-list-item">
-                                <div class="row">
-                                    <h4 class="col-sm-12">
-                                        <?php echo $country; ?>
-                                        <img src="<?php echo get_stylesheet_directory_uri();?>/images/flags/24/<?php echo $distributor['contacts_distributors_flag']; ?>.png" alt="<?php echo $country; ?>">
-                                    </h4>
-                                </div>
+                                <h4>
+                                    <?php echo $country; ?>
+                                    <img src="<?php echo get_stylesheet_directory_uri();?>/images/flags/24/<?php echo $distributor['contacts_distributors_flag']; ?>.png" alt="<?php echo $country; ?>">
+                                </h4>
                                 <div class="row">
                                     <div class="col-sm-5">
                                         <a href="http://<?php echo $distributor['contacts_distributors_url']; ?>"
@@ -39,7 +37,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         <?php endforeach; ?>
                     <?php endforeach; ?>

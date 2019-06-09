@@ -60,6 +60,7 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 10px;
+    line-height: 1.4;
     margin-top: 12px;
   }
 
@@ -78,6 +79,7 @@
       img {
         background: transparent;
         padding: 0;
+        vertical-align: bottom;
       }
     }
   }
@@ -87,10 +89,10 @@
   }
 
   a {
-    color: #fff;
+    color: $color__text-main;
     text-decoration: none;
     &:hover {
-      color: darken(#fff, 10%);
+      color: #000;
     }
   }
 }
