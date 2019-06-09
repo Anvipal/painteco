@@ -23,18 +23,14 @@ get_header(); ?>
             ?>
                 <nav class="page-navigation">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <ul class="submenu list-unstyled list-inline narrow">
-                                    <?php foreach ($terms as $term) : ?>
-                                        <li class="<?php if ($currentTerm == $term->term_id): ?>active<?php endif; ?>">
-                                            <a href="<?php echo get_term_link($term, 'painteco_gallery_category'); ?>"
-                                               title="<?php echo $term->name ?>"><?php echo $term->name ?></a>
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
-                        </div>
+                        <ul class="submenu list-unstyled list-inline narrow">
+                            <?php foreach ($terms as $term) : ?>
+                                <li class="<?php if ($currentTerm == $term->term_id): ?>active<?php endif; ?>">
+                                    <a href="<?php echo get_term_link($term, 'painteco_gallery_category'); ?>"
+                                       title="<?php echo $term->name ?>"><?php echo $term->name ?></a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
                     </div>
                 </nav>
             <?php endif; ?>
@@ -55,7 +51,7 @@ get_header(); ?>
                             </div>
                         </div>
 
-                        <?php echo ($idx % 3 == 0 ? '<div class="clearfix"></div>' : ''); ?>
+                        <?php echo ($idx % 3 == 0 ? '</div><div class="row">' : ''); ?>
 
                         <?php ++$idx; ?>
 
