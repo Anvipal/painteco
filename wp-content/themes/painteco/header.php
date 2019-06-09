@@ -35,20 +35,6 @@
 
 <?php wp_head(); ?>
 
-<style>
-	.home.front-page .site-branding {
-	  min-height: calc(100vh - 150px);
-	}
-	.home.front-page .site-header {
-		background-position: center;
-	}
-	.page .site-header, .single .site-header {
-		background: none;
-		height: 200px;
-		max-height: 200px;
-	}
-</style>
-
 </head>
 <body <?php body_class((is_front_page() ? 'front-page':'')); ?>>
 <div id="page" class="site">
@@ -66,7 +52,7 @@
 					</div>
 					<div class="col-sm-3 col-xs-6">
 						<?php get_template_part('template-parts/language_switch'); ?>
-						<a href="#">
+						<a href="#" class="header-call-link">
 							<span class="glyphicon glyphicon-earphone"></span>
 						</a>
 					</div>
