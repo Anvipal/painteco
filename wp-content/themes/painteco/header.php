@@ -42,7 +42,7 @@
 	.home.front-page .site-header {
 		background-position: center;
 	}
-	.page .site-header {
+	.page .site-header, .single .site-header {
 		background: none;
 		height: 200px;
 		max-height: 200px;
@@ -56,20 +56,23 @@
 
 	<?php global $headBackground; ?>
 	<header id="masthead" class="site-header" role="banner"<?php if (isset($headBackground) && $headBackground): ?> style="background: url('<?php echo $headBackground; ?>')"<?php endif; ?>>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-xs-4">
-					<div class="logo">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/images/painteco-logo.jpg" alt="<?php bloginfo( 'name' ); ?>"></a>
+		<div class="preheader">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-9 col-xs-6">
+						<div class="logo">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/images/painteco-logo.jpg" alt="<?php bloginfo( 'name' ); ?>"></a>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<?php get_template_part('template-parts/language_switch'); ?>
+						<a href="#">
+							<span class="glyphicon glyphicon-earphone"></span>
+						</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-xs-8">
-					<?php get_template_part('template-parts/language_switch'); ?>
-				</div>
-
 			</div>
 		</div>
-
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="container">
 				<div class="row">

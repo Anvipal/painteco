@@ -30,28 +30,39 @@
     width: 120px;
     //margin-left: 15px;
   }
+}
 
+.preheader {
+  background-color: white;
+  .glyphicon {
+    line-height: 39px;
+    font-size: 2em;
+  }
+  a {
+    color: $color__text-main;
+  }
 }
 
 .lang {
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  right: 0;
-  background: rgba(0,0,0,0.5);
+  // position: absolute;
+  // z-index: 5;
+  // top: 0;
+  // right: 0;
+  float: right;
+  // background: rgba(0,0,0,0.5);
 
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  height: 52px;
-  width: 195px;
+  // border-bottom-left-radius: 8px;
+  // border-bottom-right-radius: 8px;
+  // height: 52px;
+  // width: 195px;
 
-  @include mobile {
-    right: 15px;
-  }
+  // @include mobile {
+  //   right: 15px;
+  // }
 
-  @include mobile-portrait-down {
-    width: 165px;
-  }
+  // @include mobile-portrait-down {
+  //   width: 165px;
+  // }
 
   select {
     float: left;
@@ -76,6 +87,14 @@
       opacity: 0.9;
     }
   }
+}
+
+.lang-switch {
+    font-size: 1.2em;
+    a {
+      padding: 12px 0px 12px 12px;
+      display: inline-block;
+    }
 }
 
 .slogan {

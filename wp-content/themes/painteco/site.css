@@ -98,17 +98,3 @@
     width: 40px;
     background: #fff;
 }
-
-.lang-switch a {
-    color: white;
-}
-.lang-switch {
-    float: left;
-    padding-top: 15px;
-    padding-left: 10px;
-    font-size: 1.2em;
-    color: white !important;
-}
-.lang-switch span {
-    padding-left: 5px;
-}

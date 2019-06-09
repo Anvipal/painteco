@@ -1,14 +1,12 @@
 $menu_height: 75px;
 
 .main-navigation {
-
 	clear: both;
 	display: block;
 	float: left;
 	width: 100%;
 	background: rgba(0,0,0,0.5);
 	height: $menu_height;
-	margin-top: 65px;
 
 	@include tablet-portrait-down {
 		margin-top: -72px;
@@ -63,7 +61,7 @@ $menu_height: 75px;
 			left: auto;
 		}
 	}
-	
+
 	li {
 		display: table-cell;
 		vertical-align: middle;
@@ -101,7 +99,7 @@ $menu_height: 75px;
 
 		}
 	}
-	
+
 	a {
 		display: block;
 		text-decoration: none;
@@ -191,6 +189,7 @@ $menu_height: 75px;
 @media screen and (max-width: 991px) {
 	.main-navigation {
 		background: transparent;
+		margin-top: 15px;
 	}
 }
 
