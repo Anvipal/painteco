@@ -22,3 +22,8 @@ wp-content/plugins/hello.php
 /.git
 .DS_Store
 Thumbs.db
+
+/node_modules
+/.sass-cache
+/package-lock.json
+/simple-ftp-deploy.json
