@@ -19,8 +19,8 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-sm-12">
                             <ul class="submenu list-unstyled list-inline narrow">
-                                <li><a href="#contacts"><?php esc_html_e('Kontakti', 'painteco')?></a></li>
-                                <!-- <li><a href="#map"><?php esc_html_e('Kur iegādāties', 'painteco')?></a></li> -->
+                                <li><a href="/kontakti#contacts"><?php esc_html_e('Kontakti', 'painteco')?></a></li>
+                                <li><a href="/kontakti#map"><?php esc_html_e('Kur iegādāties', 'painteco')?></a></li>
                                 <li><a href="#"><?php esc_html_e('Ārvalstu pārstāvji', 'painteco')?></a></li>
                             </ul>
                         </div>
