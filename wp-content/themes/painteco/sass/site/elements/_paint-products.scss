@@ -72,7 +72,6 @@
 }
 
 .paint-products-item-overlay {
-
   display: none;
   background: rgba(54, 54, 53, 0.8);
 
@@ -105,7 +104,6 @@
 }
 
 .paint-products-item-nav {
-
   @include tablet-landscape-down {
     width: 145px;
     margin: 0 auto 20px;
@@ -126,7 +124,6 @@
     height: 51px;
     display: inline-block;
     text-indent: -999999px;
-
   }
 
   .paint-products-item-nav-prev {
@@ -135,7 +132,6 @@
     @include tablet-landscape-down {
       left: 0;
     }
-
   }
   .paint-products-item-nav-next {
     background-position: -51px 0;
@@ -144,5 +140,23 @@
       right: auto;
     }
   }
+}
 
+.front-gallery-slider {
+  .slick-arrow {
+    border: none;
+    background-color: none;
+    position: absolute;
+    top: calc(50% - 25px);
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &:focus, &:hover, &:active {
+      background-color: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
 }

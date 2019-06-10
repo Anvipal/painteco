@@ -27,9 +27,23 @@ $menu_height: 75px;
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: 1.5em;
+			top: calc(100% + 10px);
 			left: -999em;
 			z-index: 99999;
+			background: rgba(0,0,0,0.8);
+			border-radius: 8px;
+			padding: 10px 0;
+
+			& > li {
+				line-height: 40px;
+				padding-left: 20px;
+				&:hover > a, &.focus > a {
+					color: $color__pickle;
+					&:after {
+						content: none;
+					}
+				}
+			}
 
 			ul {
 				left: -999em;
@@ -87,7 +101,6 @@ $menu_height: 75px;
 
 		&:hover > a,
 		&.focus > a {
-
 			&:after {
 				content: "";
 				display: block;
@@ -96,7 +109,10 @@ $menu_height: 75px;
 				width: 35px;
 				background: #fff;
 			}
+		}
 
+		&:last-child:hover .sub-menu {
+			right: 0;
 		}
 	}
 
