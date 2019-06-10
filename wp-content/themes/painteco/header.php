@@ -52,9 +52,21 @@
 					</div>
 					<div class="col-sm-3 col-xs-6">
 						<?php get_template_part('template-parts/language_switch'); ?>
-						<a href="#" class="header-call-link">
+						<a href="tel:<?php the_field('contact_phone', 'options'); ?>" class="header-call-link hidden-md hidden-lg">
 							<span class="glyphicon glyphicon-earphone"></span>
 						</a>
+						<div class="dropdown header-call-link hidden-sm hidden-xs">
+						  	<div class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span class="glyphicon glyphicon-earphone"></span>
+						  	</div>
+						  	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						  		<li>
+						  			<a href="tel:<?php the_field('contact_phone', 'options'); ?>">
+										<?php the_field('contact_phone', 'options'); ?>
+									</a>
+						  		</li>
+						  	</ul>
+						</div>
 					</div>
 				</div>
 			</div>
