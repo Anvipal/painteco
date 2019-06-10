@@ -13,28 +13,6 @@ get_header(); ?>
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-
-            <!-- Submenu -->
-            <?php
-            $currentTerm = get_queried_object()->term_id;
-
-            $terms = get_terms('painteco_gallery_category'); //print_r($terms);
-            if ( ! empty($terms)) :
-            ?>
-                <nav class="page-navigation">
-                    <div class="container">
-                        <ul class="submenu list-unstyled list-inline narrow">
-                            <?php foreach ($terms as $term) : ?>
-                                <li class="<?php if ($currentTerm == $term->term_id): ?>active<?php endif; ?>">
-                                    <a href="<?php echo get_term_link($term, 'painteco_gallery_category'); ?>"
-                                       title="<?php echo $term->name ?>"><?php echo $term->name ?></a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                </nav>
-            <?php endif; ?>
-
             <!-- Gallery list -->
             <div class="container gallery-list">
                 <div class="row">
