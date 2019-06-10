@@ -24,7 +24,7 @@
                 <a href="<?php echo $permalink; ?>"><img src="<?php echo get_stylesheet_directory_uri();?>/images/constructor.png"></a>
             </div>
         </div>
-        <div class="col-sm-6 col-md-3 text-center">
+        <!-- <div class="col-sm-6 col-md-3 text-center">
             <?php
             $categoryId = apply_filters( 'wpml_object_id', 25, 'painteco_gallery_category' );
             ?>
@@ -39,6 +39,6 @@
                     <p><?php esc_html_e('Aplūko cik krāsaina var būt pasaule ar mūsu krāsām.', 'painteco'); ?></p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

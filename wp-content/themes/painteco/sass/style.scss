@@ -50,9 +50,11 @@ Tags: responsive
 /*--------------------------------------------------------------
 # Bootstrap
 --------------------------------------------------------------*/
-@import "bootstrap-sprockets";
-@import "bootstrap-compass";
-@import "bootstrap";
+// @import "bootstrap-sprockets";
+// @import "bootstrap-compass";
+// @import "bootstrap";
+
+@import "from_style";
 
 /*--------------------------------------------------------------
 # Site variables

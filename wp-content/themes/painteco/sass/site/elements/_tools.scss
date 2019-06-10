@@ -4,37 +4,30 @@
   }
 }
 
-.tools-text-container {
-  position: relative;
-  height: 260px;
-  @include mobile-landscape-down {
-    height: 120px;
-  }
-  @include tablet-portrait {
-    height: 100px;
-  }
-  display: block;
-}
+// .tools-text-container {
+//   position: relative;
+//   height: 260px;
+//   @include mobile-landscape-down {
+//     height: 120px;
+//   }
+//   @include tablet-portrait {
+//     height: 100px;
+//   }
+//   display: block;
+// }
 
 .tools-text {
-
-  position: absolute;
-  bottom: 0;
-
-  @include tablet-portrait {
-    position: relative;
-  }
-
+  // @include tablet-portrait {
+  //   position: relative;
+  // }
   h3{
     @include font-size(3.6);
     text-transform: uppercase;
     font-weight: 700;
   }
-
-  p{
-    @include font-size(1.4);
-  }
-
+  // p{
+  //   @include font-size(1.4);
+  // }
 }
 
 .tools-image {
