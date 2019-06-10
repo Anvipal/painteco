@@ -43,6 +43,10 @@
     line-height: 39px;
     font-size: 2em;
     cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
