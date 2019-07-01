@@ -1,0 +1,77 @@
+
+.chair:before {
+	width: 10em;
+	height: 10em;
+	background-position: -0em 0;
+}
+
+.fence:before {
+	width: 10em;
+	height: 10em;
+	background-position: -10em 0;
+}
+
+.floor:before {
+	width: 10em;
+	height: 10em;
+	background-position: -20em 0;
+}
+
+.house:before {
+	width: 10em;
+	height: 10em;
+	background-position: -30em 0;
+}
+
+.jigsaw:before {
+	width: 10em;
+	height: 10em;
+	background-position: -40em 0;
+}
+
+.sauna:before {
+	width: 10em;
+	height: 10em;
+	background-position: -50em 0;
+}
+
+.toy:before {
+	width: 10em;
+	height: 10em;
+	background-position: -60em 0;
+}
+
+.chair,
+.fence,
+.floor,
+.house,
+.jigsaw,
+.sauna,
+.toy {
+	font-size:10px;
+}
+
+.no-svg .chair:before,
+.no-svg .fence:before,
+.no-svg .floor:before,
+.no-svg .house:before,
+.no-svg .jigsaw:before,
+.no-svg .sauna:before,
+.no-svg .toy:before {
+	background-image: url("../sprites/png-sprite.png");
+}
+
+.chair:before,
+.fence:before,
+.floor:before,
+.house:before,
+.jigsaw:before,
+.sauna:before,
+.toy:before {
+	content:' ';
+	vertical-align:middle;
+	display: inline-block;
+	background-image: url("../sprites/svg-sprite.svg");
+	background-repeat: no-repeat;
+	background-size: 70em 10em;
+}

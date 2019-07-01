@@ -49,15 +49,15 @@ module.exports = function(grunt) {
                 }
             }
         },
-        // svg_sprites: {
-        //     options: {
-        //       // Task-specific options go here.
-        //     },
-        //     files: {
-        //         src: '<%= pkg.sourceDir %>/svg/*.svg',
-        //         dest: '<%= pkg.assetsDir %>/svg'
-        //     }
-        // },
+        svg_sprites: {
+            options: {
+              // Task-specific options go here.
+            },
+            files: {
+                src: '<%= pkg.assetsDir %>/images/category_icons/*.svg',
+                dest: '<%= pkg.assetsDir %>/images/svg_sprites'
+            }
+        },
         watch: {
             styles: {
                 files: [
@@ -65,6 +65,12 @@ module.exports = function(grunt) {
                 ],
                 tasks: ['sass', 'postcss', 'cssmin']
             },
+            svg: {
+                files: [
+                    '<%= pkg.assetsDir %>/images/category_icons/*.svg'
+                ],
+                tasks: ['svg_sprites']
+            }
             // scripts: {
             //     files: [
             //         '<%= pkg.sourceDir %>/js/app/*'
@@ -81,8 +87,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    // grunt.loadNpmTasks('grunt-svg-sprites');
+    grunt.loadNpmTasks('grunt-svg-sprites');
 
     // tasks
-    grunt.registerTask('default', ['sass', 'postcss', 'cssmin'/*, 'clean', 'svg_sprites', 'uglify'*/]);
+    grunt.registerTask('default', ['sass', 'postcss', 'cssmin', 'svg_sprites'/*, 'clean', 'uglify'*/]);
 };

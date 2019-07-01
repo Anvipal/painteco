@@ -1,24 +1,19 @@
 <!-- Options / Filter -->
 <div class="container paint-options">
-    <div class="row">
-        <div class="col-sm-3">
-            <p class="want-to-color"><?php esc_html_e('Vēlos krāsot...', 'painteco'); ?></p>
-        </div>
-        <div class="col-sm-9">
-            <ul class="paint-options-items list-unstyled list-inline">
-                <?php
-                $productPermalink = get_permalink(wpml_object_id_filter(21, 'page'));
-                ?>
-                <li class="furniture"><a href="<?php echo $productPermalink; ?>#cat-furniture" class="filter1" data-filter=".cat-furniture"><?php esc_html_e('Mēbeles', 'painteco'); ?></a></li>
-                <li class="yard"><a href="<?php echo $productPermalink; ?>#cat-yard" class="filter1" data-filter=".cat-yard"><?php esc_html_e('Pagalms', 'painteco'); ?></a></li>
-                <li class="floor"><a href="<?php echo $productPermalink; ?>#cat-floor" class="filter1" data-filter=".cat-floor"><?php esc_html_e('Grīda', 'painteco'); ?></a></li>
-                <li class="facade"><a href="<?php echo $productPermalink; ?>#cat-facade" class="filter1" data-filter=".cat-facade"><?php esc_html_e('Māja', 'painteco'); ?></a></li>
-                <li class="restoration"><a href="<?php echo $productPermalink; ?>#cat-restoration" class="filter1" data-filter=".cat-restoration"><?php esc_html_e('Restaurācija', 'painteco'); ?></a></li>
-                <li class="toys"><a href="<?php echo $productPermalink; ?>#cat-toys" class="filter1" data-filter=".cat-toys"><?php esc_html_e('Rotaļlietas', 'painteco'); ?></a></li>
-                <li class="sauna"><a href="<?php echo $productPermalink; ?>#cat-sauna" class="filter1" data-filter=".cat-sauna"><?php esc_html_e('Pirts', 'painteco'); ?></a></li>
-            </ul>
-        </div>
-    </div>
+    <p class="want-to-color"><?php esc_html_e('Vēlos krāsot...', 'painteco'); ?></p>
+
+    <ul class="paint-options-items list-unstyled list-inline">
+        <?php
+        $productPermalink = get_permalink(wpml_object_id_filter(21, 'page'));
+        ?>
+        <li class="furniture"><a href="<?php echo $productPermalink; ?>#cat-furniture" class="filter1" data-filter=".cat-furniture"><?php esc_html_e('Mēbeles', 'painteco'); ?></a></li>
+        <li class="yard"><a href="<?php echo $productPermalink; ?>#cat-yard" class="filter1" data-filter=".cat-yard"><?php esc_html_e('Pagalms', 'painteco'); ?></a></li>
+        <li class="floor"><a href="<?php echo $productPermalink; ?>#cat-floor" class="filter1" data-filter=".cat-floor"><?php esc_html_e('Grīda', 'painteco'); ?></a></li>
+        <li class="facade"><a href="<?php echo $productPermalink; ?>#cat-facade" class="filter1" data-filter=".cat-facade"><?php esc_html_e('Māja', 'painteco'); ?></a></li>
+        <li class="restoration"><a href="<?php echo $productPermalink; ?>#cat-restoration" class="filter1" data-filter=".cat-restoration"><?php esc_html_e('Restaurācija', 'painteco'); ?></a></li>
+        <li class="toys"><a href="<?php echo $productPermalink; ?>#cat-toys" class="filter1" data-filter=".cat-toys"><?php esc_html_e('Rotaļlietas', 'painteco'); ?></a></li>
+        <li class="sauna"><a href="<?php echo $productPermalink; ?>#cat-sauna" class="filter1" data-filter=".cat-sauna"><?php esc_html_e('Pirts', 'painteco'); ?></a></li>
+    </ul>
 </div>
 
 <!-- Products -->

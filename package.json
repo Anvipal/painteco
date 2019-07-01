@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-postcss": "^0.9.0"
+    "grunt-postcss": "^0.9.0",
+    "grunt-svg-sprites": "^1.0.0"
   }
 }
