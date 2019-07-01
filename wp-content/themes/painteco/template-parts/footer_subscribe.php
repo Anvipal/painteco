@@ -9,7 +9,7 @@
                     <input type="email" name="subscribe_email" class="form-control" placeholder="my.email@gmail.com" />
                 </div>
                 <div class="col-sm-2">
-                    <button type="submit" class="btn btn-success btn-block"><?php echo __('Nosūtīt', 'painteco'); ?></button>
+                    <button type="submit" class="btn btn-success btn-block"><?php echo __('Abonēt', 'painteco'); ?></button>
                 </div>
             </div>
         </form>
