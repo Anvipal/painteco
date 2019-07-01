@@ -1,7 +1,6 @@
 <section class="footer-subscribe">
     <div class="container">
-        <form action="<?php echo esc_url(admin_url('admin-post.php')) ?>" method="post" class="form-horizontal">
-            <input type="hidden" name="action" value="contact_form"/>
+        <form action="" method="post" class="form-horizontal">
             <input type="hidden" name="form_name" value="Jaunumu forma"/>
             <input type="hidden" name="return_url" value="<?php esc_html(get_permalink()) ?>"/>
             <div class="form-group">
@@ -10,7 +9,7 @@
                     <input type="email" name="subscribe_email" class="form-control" placeholder="my.email@gmail.com" />
                 </div>
                 <div class="col-sm-2">
-                    <button type="submit" class="btn btn-success btn-block"><?php echo __('Send', 'painteco'); ?></button>
+                    <button type="submit" class="btn btn-success btn-block"><?php echo __('Nosūtīt', 'painteco'); ?></button>
                 </div>
             </div>
         </form>
