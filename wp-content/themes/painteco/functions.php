@@ -287,3 +287,13 @@ function painteco_get_palette()
 
     return $indexedPalette;
 }
+
+function painteco_contact_form(){
+	$client_email = $_POST['subscribe_email'];
+	$form_name = $_POST['form_name'];
+	$to = 'viznukalex06@gmail.com';
+	wp_mail($to, "Jauns e-pasts no painteco.com", "Forma: {$form_name}\n<br\>Email: {$client_email}");
+
+}
+add_action( 'admin_post_nopriv_contact_form', 'painteco_contact_form' );
+add_action( 'admin_post_contact_form', 'painteco_contact_form' );
