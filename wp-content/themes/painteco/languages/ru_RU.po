@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Painteco\n"
 "POT-Creation-Date: 2016-06-15 21:54+0300\n"
-"PO-Revision-Date: 2016-07-11 21:10+0300\n"
+"PO-Revision-Date: 2019-07-01 23:29+0300\n"
 "Last-Translator: \n"
 "Language-Team: Lapuvieta.lv <info@lapuvieta.lv>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: esc_html_e;esc_html__\n"
@@ -146,7 +146,7 @@ msgstr "Контакты"
 
 #: template-contacts.php:20 template-parts/contacts_map.php:6
 msgid "Kur iegādāties"
-msgstr "Где купить?"
+msgstr "Где купить"
 
 #: template-contacts.php:21 template-parts/contacts_distributors.php:14
 msgid "Ārvalstu pārstāvji"
@@ -305,7 +305,7 @@ msgstr "Разкрась сам!"
 
 #: template-parts/front_page_tools.php:7
 msgid "Izmanto mūsu modelēšanas rīku, lai ieraudzītu pasauli mūsu krāsās."
-msgstr "Используйте инструмент моделирования, чтобы увидеть мир в наших цветах!"
+msgstr "Используйте инструмент моделирования, чтобы увидеть мир в наших цветах."
 
 #: template-parts/front_page_tools.php:39
 msgid "Aplūko cik krāsaina var būt pasaule ar mūsu krāsām."
@@ -356,26 +356,8 @@ msgstr "Встретимся в социальных сетях"
 msgid "Dabīgās sastāvdaļas"
 msgstr "Натуральные ингридиенты"
 
-#~ msgid "Komanda"
-#~ msgstr "Команда"
+msgid "Pierakstaties mūsu jaunumiem"
+msgstr "Подписаться на последние новости"
 
-#~ msgid "Pētniecība"
-#~ msgstr "Исследования"
-
-#~ msgid "ES Projekti"
-#~ msgstr "Проекты ЕС"
-
-#~ msgid "Atsauksmes"
-#~ msgstr "Рекомендации"
-
-#~ msgid "Sadarbības partneri"
-#~ msgstr "Партнеры"
-
-#~ msgid "Aprēķina kalkulators"
-#~ msgstr "Калькулятор потребления"
-
-#~ msgid "Apdares dēlis"
-#~ msgstr "Облицовачная доска"
-
-#~ msgid "Apaļkoks"
-#~ msgstr "Сруб"
+msgid "Abonēt"
+msgstr "Отправить"

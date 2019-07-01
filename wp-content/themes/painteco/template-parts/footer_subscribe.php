@@ -4,7 +4,7 @@
             <input type="hidden" name="form_name" value="Jaunumu forma"/>
             <input type="hidden" name="return_url" value="<?php esc_html(get_permalink()) ?>"/>
             <div class="form-group">
-                <label for="" class="col-sm-5"><?php echo __('Pierakstaties mūsu jaunumiem:', 'painteco'); ?></label>
+                <label for="" class="col-sm-5"><?php echo __("Pierakstaties mūsu jaunumiem", 'painteco'); ?>:</label>
                 <div class="col-sm-4">
                     <input type="email" name="subscribe_email" class="form-control" placeholder="my.email@gmail.com" />
                 </div>
