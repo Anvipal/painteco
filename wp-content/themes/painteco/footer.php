@@ -13,6 +13,8 @@
 
 	</div><!-- #content -->
 
+    <?php get_template_part('template-parts/footer_subscribe'); ?>
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 
@@ -32,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
