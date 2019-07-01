@@ -3,7 +3,7 @@
         <form action="<?php echo esc_url(admin_url('admin-post.php')) ?>" method="post" class="form-horizontal">
             <input type="hidden" name="action" value="contact_form"/>
             <input type="hidden" name="form_name" value="Jaunumu forma"/>
-            <input type="hidden" name="back_url" value="<?php esc_html(get_permalink()) ?>"/>
+            <input type="hidden" name="return_url" value="<?php esc_html(get_permalink()) ?>"/>
             <div class="form-group">
                 <label for="" class="col-sm-5"><?php echo __('Pierakstaties mūsu jaunumiem:', 'painteco'); ?></label>
                 <div class="col-sm-4">

@@ -291,10 +291,12 @@ function painteco_get_palette()
 add_action( 'admin_post_nopriv_contact_form', 'painteco_contact_form' );
 add_action( 'admin_post_contact_form', 'painteco_contact_form' );
 function painteco_contact_form(){
-	$client_email = $_POST['subscribe_email'];
+	$client_email = sanitize_email($_POST['subscribe_email']);
 	$form_name = $_POST['form_name'];
 	$return_url = $_POST['return_url'];
 	$to = 'viznukalex06@gmail.com';
-	wp_mail($to, "Jauns e-pasts no painteco.com", "Forma: {$form_name}\n<br\>Email: {$client_email}");
-	wp_redirect($return_url);
+	if (is_email($client_email)) {
+		wp_mail( $to, "Jauns e-pasts no painteco.com", "Forma: {$form_name}\n<br\>Email: {$client_email}" );
+	}
+	return wp_redirect($return_url);
 }
