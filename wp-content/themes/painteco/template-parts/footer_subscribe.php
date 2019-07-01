@@ -1,6 +1,6 @@
 <section class="footer-subscribe">
     <div class="container">
-        <form action="" method="post" class="form-horizontal">
+        <form action="<?php echo get_page_link() ?>" method="post" class="form-horizontal">
             <input type="hidden" name="form_name" value="Jaunumu forma"/>
             <input type="hidden" name="return_url" value="<?php esc_html(get_permalink()) ?>"/>
             <div class="form-group">
