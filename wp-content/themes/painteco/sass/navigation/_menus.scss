@@ -8,14 +8,6 @@ $menu_height: 75px;
 	background: rgba(0,0,0,0.5);
 	height: $menu_height;
 
-	@include tablet-portrait-down {
-		margin-top: -72px;
-	}
-
-	@include mobile-landscape-down {
-		margin-top: -32px;
-	}
-
 	ul {
 		display: none;
 		list-style: none;
@@ -143,6 +135,51 @@ $menu_height: 75px;
 			background: #fff;
 		}
 
+	}
+
+	.sub-menu {
+		li {
+			line-height: 24px;
+    		padding: 8px 20px;
+		}
+	    .current-menu-ancestor, .current-menu-item, .current-page-ancestor, .current_page_item {
+	        background-color: $color__pickle;
+	        & > a{
+	            &:after {
+	                content: none;
+	            }
+	            &:hover {
+	                color: white;
+	            }
+	        }
+	    }
+	}
+
+	@include tablet-portrait-down {
+		margin-top: -72px;
+
+		a {
+			display: inline-block;
+		}
+
+		&.toggled ul.sub-menu {
+			position: relative;
+		    margin: 0;
+		    border-radius: 0;
+		}
+
+		li {
+			ul.sub-menu {
+				display: none;
+			}
+			&:hover ul.sub-menu {
+				display: block;
+			}
+		}
+	}
+
+	@include mobile-landscape-down {
+		margin-top: -32px;
 	}
 }
 
