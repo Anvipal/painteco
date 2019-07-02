@@ -1,7 +1,7 @@
 <p><?php esc_html_e('Mēs sociālajos tīklos', 'painteco'); ?></p>
 <ul class="list-unstyled list-inline social-networks">
     <?php
-        $socials = ['youtube', 'facebook', 'twitter', 'linkedin'];
+        $socials = ['youtube', 'facebook'/*, 'twitter', 'linkedin'*/];
         foreach ($socials as $socialName):
             if (get_field('social_' . $socialName, 'options')):
     ?>

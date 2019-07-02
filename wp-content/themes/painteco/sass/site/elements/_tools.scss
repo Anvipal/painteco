@@ -30,6 +30,12 @@
   // }
 }
 
+.tools-text-container {
+  @include tablet-portrait-down {
+    text-align: center;
+  }
+}
+
 .tools-image {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -42,9 +48,9 @@
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.3);
 
   padding: 11px 8px;
+  max-width: 290px;
 
   @include tablet-portrait-down {
-    width: 240px;
     margin:0 auto;
     text-align: center;
   }
@@ -66,7 +72,4 @@
       margin-bottom: 30px;
     }
   }
-
 }
-
-

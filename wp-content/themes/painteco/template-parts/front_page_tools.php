@@ -1,6 +1,6 @@
 <div class="container tools">
     <div class="row">
-        <div class="col-sm-6 col-md-3">
+        <div class="col-sm-6 col-md-3 col-md-offset-3">
             <div class="tools-text-container">
                 <div class="tools-text">
                     <h3><?php esc_html_e('Izkrāso pats!', 'painteco'); ?></h3>

@@ -8,7 +8,7 @@
 .contact-information,
 .site-footer a {
   color: #a5a5a5;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .site-footer a {
@@ -18,6 +18,10 @@
   }
 }
 
+.site-footer .footer-menu-title a {
+  font-weight: 600;
+}
+
 .contact-information {
   margin-left: 0;
   @include font-size(1.4);
@@ -25,7 +29,7 @@
   h4 {
     text-transform: uppercase;
     @include font-size(1.2);
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 7px;
   }
 
@@ -98,6 +102,10 @@
   .footer-menu-items {
     margin:0;
     padding:0;
+
+    li {
+      padding-bottom: 4px;
+    }
 
   }
 

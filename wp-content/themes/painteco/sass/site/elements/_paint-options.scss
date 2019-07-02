@@ -4,7 +4,7 @@
   }
 }
 
-.paint-options-items {
+.paint-options-items, .products-list-paint-options-items {
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -33,7 +33,7 @@
       outline: 0;
     }
 
-    &:hover {
+    &:hover, &.active {
       background-color: #fff;
       box-shadow: 0 1px 4px rgba(0,0,0,.3), 0 0 6px rgba(0,0,0,.3);
     }
@@ -75,104 +75,117 @@
   }
 }
 
-.products-list-paint-options-items {
-  float: right;
-
-  @include mobile-portrait-down {
-    float: none;
-  }
-
-  li {
-    width: 56px;
-    height: 56px;
-    background: url("images/paint-options.png") no-repeat;
-    background-size: cover;
-    margin-left: 40px;
-    margin-bottom: 25px;
-    padding: 0;
-
-    &:hover {
-      transform: scale(1.7);
-      @include mobile-landscape-down {
-        transform: scale(1.45);
-      }
-    }
-
-    a {
-      display: block;
-      width: 56px;
-      height: 56px;
-      -webkit-border-radius: (56px) / 2;
-      -moz-border-radius: (56px) / 2;
-      border-radius: (56px) / 2;
-      color: #fff;
-      text-align: center;
-      line-height: 56px;
-      background: rgba(0, 0, 0, 0);
-      @include font-size(0.9);
-      font-weight: 300;
-      text-indent: -999999999px;
-      text-decoration: none;
-      outline: 0;
-
-      &:hover {
-        text-indent: 0;
-        background: rgba(76, 77, 79, 0.86);
-      }
-    }
-
-  }
-
-  li.active {
-    transform: scale(1.7);
-    @include mobile-landscape-down {
-      transform: scale(1.45);
-    }
-    a {
-      text-indent: 0;
-      background: rgba(76, 77, 79, 0.86);
-    }
-  }
-
-  li.want-to-color {
-    width: auto;
-    background: none;
-    @include font-size(1.6);
-    font-weight: bold;
+.products-list-paint-options {
+  .want-to-color {
+    @include font-size(2.4);
     text-transform: uppercase;
-    transform: scale(1);
-    margin: 0 0 0 15px;
-    @include mobile-landscape-down {
-      display: block;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    @include tablet-portrait-down {
+      text-align: center;
     }
   }
-
-  li.furniture {
-    background-position: 0 0;
-  }
-
-  li.yard {
-    background-position: (-56px)*1 0;
-  }
-
-  li.floor {
-    background-position: ((-56px)*2) 0;
-  }
-
-  li.facade {
-    background-position: ((-56px)*3) 0;
-  }
-
-  li.restoration {
-    background-position: ((-56px)*4) 0;
-  }
-
-  li.toys {
-    background-position: ((-56px)*5) 0;
-  }
-
-  li.sauna {
-    background-position: ((-56px)*6) 0;
-  }
-
 }
+
+// .products-list-paint-options-items {
+//   float: right;
+
+//   @include mobile-portrait-down {
+//     float: none;
+//   }
+
+//   li {
+//     width: 56px;
+//     height: 56px;
+//     background: url("images/paint-options.png") no-repeat;
+//     background-size: cover;
+//     margin-left: 40px;
+//     margin-bottom: 25px;
+//     padding: 0;
+
+//     &:hover {
+//       transform: scale(1.7);
+//       @include mobile-landscape-down {
+//         transform: scale(1.45);
+//       }
+//     }
+
+//     a {
+//       display: block;
+//       width: 56px;
+//       height: 56px;
+//       -webkit-border-radius: (56px) / 2;
+//       -moz-border-radius: (56px) / 2;
+//       border-radius: (56px) / 2;
+//       color: #fff;
+//       text-align: center;
+//       line-height: 56px;
+//       background: rgba(0, 0, 0, 0);
+//       @include font-size(0.9);
+//       font-weight: 300;
+//       text-indent: -999999999px;
+//       text-decoration: none;
+//       outline: 0;
+
+//       &:hover {
+//         text-indent: 0;
+//         background: rgba(76, 77, 79, 0.86);
+//       }
+//     }
+
+//   }
+
+//   li.active {
+//     transform: scale(1.7);
+//     @include mobile-landscape-down {
+//       transform: scale(1.45);
+//     }
+//     a {
+//       text-indent: 0;
+//       background: rgba(76, 77, 79, 0.86);
+//     }
+//   }
+
+//   li.want-to-color {
+//     width: auto;
+//     background: none;
+//     @include font-size(1.6);
+//     font-weight: bold;
+//     text-transform: uppercase;
+//     transform: scale(1);
+//     margin: 0 0 0 15px;
+//     @include mobile-landscape-down {
+//       display: block;
+//     }
+//   }
+
+//   li.furniture {
+//     background-position: 0 0;
+//   }
+
+//   li.yard {
+//     background-position: (-56px)*1 0;
+//   }
+
+//   li.floor {
+//     background-position: ((-56px)*2) 0;
+//   }
+
+//   li.facade {
+//     background-position: ((-56px)*3) 0;
+//   }
+
+//   li.restoration {
+//     background-position: ((-56px)*4) 0;
+//   }
+
+//   li.toys {
+//     background-position: ((-56px)*5) 0;
+//   }
+
+//   li.sauna {
+//     background-position: ((-56px)*6) 0;
+//   }
+
+// }

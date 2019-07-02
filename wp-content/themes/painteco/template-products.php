@@ -15,42 +15,34 @@ get_header(); ?>
 
             <!-- Components -->
             <div class="container components">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h2 class="page-section-title text-uppercase"><?php esc_html_e('Dabīgās sastāvdaļas', 'painteco'); ?></h2>
+                <h2 class="page-section-title text-uppercase"><?php esc_html_e('Dabīgās sastāvdaļas', 'painteco'); ?></h2>
+                <!--div class="col-sm-4">
+                    <?php //get_template_part('template-parts/products_components'); ?>
+                </div -->
+                <div class="text product-overall-description">
+                    <div class="cat-default">
+                        <?php the_content(); ?>
                     </div>
-
-                    <!--div class="col-sm-4">
-                        <?php //get_template_part('template-parts/products_components'); ?>
-                    </div -->
-
-                    <div class="col-sm-12">
-                        <div class="text product-overall-description">
-                            <div class="cat-default">
-                                <?php the_content(); ?>
-                            </div>
-                            <div class="cat-furniture" style="display: none;">
-                                <?php the_field('products_purpose_furniture', 'options'); ?>
-                            </div>
-                            <div class="cat-yard" style="display: none;">
-                                <?php the_field('products_purpose_yard', 'options'); ?>
-                            </div>
-                            <div class="cat-floor" style="display: none;">
-                                <?php the_field('products_purpose_floor', 'options'); ?>
-                            </div>
-                            <div class="cat-facade" style="display: none;">
-                                <?php the_field('products_purpose_facade', 'options'); ?>
-                            </div>
-                            <div class="cat-restoration" style="display: none;">
-                                <?php the_field('products_purpose_restoration', 'options'); ?>
-                            </div>
-                            <div class="cat-toys" style="display: none;">
-                                <?php the_field('products_purpose_toys', 'options'); ?>
-                            </div>
-                            <div class="cat-sauna" style="display: none;">
-                                <?php the_field('products_purpose_sauna', 'options'); ?>
-                            </div>
-                        </div>
+                    <div class="cat-furniture" style="display: none;">
+                        <?php the_field('products_purpose_furniture', 'options'); ?>
+                    </div>
+                    <div class="cat-yard" style="display: none;">
+                        <?php the_field('products_purpose_yard', 'options'); ?>
+                    </div>
+                    <div class="cat-floor" style="display: none;">
+                        <?php the_field('products_purpose_floor', 'options'); ?>
+                    </div>
+                    <div class="cat-facade" style="display: none;">
+                        <?php the_field('products_purpose_facade', 'options'); ?>
+                    </div>
+                    <div class="cat-restoration" style="display: none;">
+                        <?php the_field('products_purpose_restoration', 'options'); ?>
+                    </div>
+                    <div class="cat-toys" style="display: none;">
+                        <?php the_field('products_purpose_toys', 'options'); ?>
+                    </div>
+                    <div class="cat-sauna" style="display: none;">
+                        <?php the_field('products_purpose_sauna', 'options'); ?>
                     </div>
                 </div>
             </div>
@@ -58,20 +50,16 @@ get_header(); ?>
 
             <!-- Options / Filter -->
             <div class="container products-list-paint-options">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul class="products-list-paint-options-items list-unstyled list-inline">
-                            <li class="want-to-color"><?php esc_html_e('Vēlos krāsot...', 'painteco'); ?></li>
-                            <li class="furniture"><a href="#" class="filter" data-filter=".cat-furniture"><?php esc_html_e('Mēbeles', 'painteco'); ?></a></li>
-                            <li class="yard"><a href="#" class="filter" data-filter=".cat-yard"><?php esc_html_e('Pagalms', 'painteco'); ?></a></li>
-                            <li class="floor"><a href="#" class="filter" data-filter=".cat-floor"><?php esc_html_e('Grīda', 'painteco'); ?></a></li>
-                            <li class="facade"><a href="#" class="filter" data-filter=".cat-facade"><?php esc_html_e('Māja', 'painteco'); ?></a></li>
-                            <li class="restoration"><a href="#" class="filter" data-filter=".cat-restoration"><?php esc_html_e('Restaurācija', 'painteco'); ?></a></li>
-                            <li class="toys"><a href="#" class="filter" data-filter=".cat-toys"><?php esc_html_e('Rotaļlietas', 'painteco'); ?></a></li>
-                            <li class="sauna"><a href="#" class="filter" data-filter=".cat-sauna"><?php esc_html_e('Pirts', 'painteco'); ?></a></li>
-                        </ul>
-                    </div>
-                </div>
+                <p class="want-to-color"><?php esc_html_e('Vēlos krāsot...', 'painteco'); ?></p>
+                <ul class="products-list-paint-options-items list-unstyled list-inline">
+                    <li class="furniture"><a href="#" class="filter" data-filter=".cat-furniture"><?php esc_html_e('Mēbeles', 'painteco'); ?></a></li>
+                    <li class="yard"><a href="#" class="filter" data-filter=".cat-yard"><?php esc_html_e('Pagalms', 'painteco'); ?></a></li>
+                    <li class="floor"><a href="#" class="filter" data-filter=".cat-floor"><?php esc_html_e('Grīda', 'painteco'); ?></a></li>
+                    <li class="facade"><a href="#" class="filter" data-filter=".cat-facade"><?php esc_html_e('Māja', 'painteco'); ?></a></li>
+                    <li class="restoration"><a href="#" class="filter" data-filter=".cat-restoration"><?php esc_html_e('Restaurācija', 'painteco'); ?></a></li>
+                    <li class="toys"><a href="#" class="filter" data-filter=".cat-toys"><?php esc_html_e('Rotaļlietas', 'painteco'); ?></a></li>
+                    <li class="sauna"><a href="#" class="filter" data-filter=".cat-sauna"><?php esc_html_e('Pirts', 'painteco'); ?></a></li>
+                </ul>
             </div>
 
             <!-- Product list -->
