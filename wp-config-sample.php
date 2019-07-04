@@ -79,6 +79,12 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+/* Custom constants */
+/* Return email for subscription form */
+define('SUBSCRIBE_EMAIL', 'put valid email address here');
+/* Front gallery post id */
+define('FRONT_GALLERY_POST_ID', 'put valid integer id here');
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */

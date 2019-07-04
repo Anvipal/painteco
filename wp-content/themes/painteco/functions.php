@@ -289,17 +289,19 @@ function painteco_get_palette()
 }
 
 function painteco_contact_form(){
-	if ("Jaunumu forma" == $_POST['form_name']) {
+	if (isset($_POST["form_name"]) && "Jaunumu forma" == $_POST['form_name']) {
 		$client_email = sanitize_email( $_POST['subscribe_email'] );
 		$form_name    = $_POST['form_name'];
 		$return_url   = $_POST['return_url'];
-		$to           = 'viznukalex06@gmail.com';
+		$to           = defined('SUBSCRIBE_EMAIL') or define('SUBSCRIBE_EMAIL', 'viznukalex06@gmail.com');
 		$headers      = array( 'Content-Type: text/html; charset=UTF-8' );
 		if ( is_email( $client_email ) !== false ) {
 			wp_mail( $to, "Jauns e-pasts no painteco.com", "Forma: {$form_name}<br\> Email: {$client_email}",
 				$headers );
 		}
+		return wp_redirect($return_url);
 	}
-	return wp_redirect($return_url);
+	return null;
 }
+
 add_action( 'init', 'painteco_contact_form' );

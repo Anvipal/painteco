@@ -3,7 +3,7 @@
     <div class="tools-text text-center">
         <h3><?php esc_html_e('Galerija', 'painteco'); ?></h3>
     </div>
-    <?php $images = get_field('gallery_images', 3594); ?>
+    <?php $images = get_field('gallery_images', defined('FRONT_GALLERY_POST_ID') or define('FRONT_GALLERY_POST_ID', 3594)); ?>
     <div class="front-gallery-slider">
         <?php foreach ($images as $image) : ?>
         <div class="tools-image front-gallery-slide">
