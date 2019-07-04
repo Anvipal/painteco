@@ -293,7 +293,7 @@ function painteco_contact_form(){
 		$client_email = sanitize_email( $_POST['subscribe_email'] );
 		$form_name    = $_POST['form_name'];
 		$return_url   = $_POST['return_url'];
-		$to           = defined('SUBSCRIBE_EMAIL') or define('SUBSCRIBE_EMAIL', 'viznukalex06@gmail.com');
+		$to           = SUBSCRIBE_EMAIL;
 		$headers      = array( 'Content-Type: text/html; charset=UTF-8' );
 		if ( is_email( $client_email ) !== false ) {
 			wp_mail( $to, "Jauns e-pasts no painteco.com", "Forma: {$form_name}<br\> Email: {$client_email}",
