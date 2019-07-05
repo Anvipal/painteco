@@ -25,7 +25,7 @@
 					the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 				}
 
-			if ( 'post' === get_post_type() ) : ?>
+			if ( 'post' === get_post_type() && !in_category(['padomi', 'sovety', 'tips'])) : ?>
 			<div class="entry-meta">
 				<?php painteco_posted_on(); ?>
 			</div><!-- .entry-meta -->
