@@ -34,8 +34,11 @@
                     <?php while ($productsQuery->have_posts()) : $productsQuery->the_post(); ?>
                     <?php
                         $mixClasses = '';
-                        foreach (get_field('product_usage') as $usage) {
-                            $mixClasses .= ' cat-' . $usage;
+                        $usages = get_field('product_usage');
+                        if (is_array($usages)) {
+	                        foreach ( $usages as $usage ) {
+		                        $mixClasses .= ' cat-' . $usage;
+	                        }
                         }
 
                         $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
