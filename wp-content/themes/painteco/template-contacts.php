@@ -13,6 +13,7 @@ get_header(); ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
             <?php get_template_part('template-parts/contacts_overall'); ?>
+            <?php get_template_part('template-parts/contacts_shops'); ?>
             <?php get_template_part('template-parts/contacts_map'); ?>
             <!-- ?php get_template_part('template-parts/contacts_distributors'); ? -->
         </main><!-- #main -->

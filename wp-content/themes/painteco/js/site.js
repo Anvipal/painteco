@@ -184,6 +184,11 @@
         }
     });
 
+    $('#contacts_showall').click(function() {
+        $('#shops_list').toggleClass('open');
+        $(this).find('span').toggle();
+    });
+
 
     LanguageSwitch.cfg.target = '.lang-switch';
     LanguageSwitch.init();

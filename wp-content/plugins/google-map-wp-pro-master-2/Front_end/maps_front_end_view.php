@@ -285,20 +285,27 @@ function showpublishedmap( $id ) {
 							}
 						}).done(function (response) {
 							HGinitializeMap(response);
+							CreateMarkerList(response);
 						}).fail(function () {
 							console.log('Failed to load response from database');
 						});
+						function CreateMarkerList(response) {
+							if (response.success) {
+								var markers = response.success.markers;
+								for (var i = 0; i < markers.length; i++) {
+									jQuery('#shops_list').append('<p>' + markers[i].description.replace(/\\/ig, "") + '</p>');
+								}
+							}
+						};
 						function HGinitializeMap(response) {
 							if (response.success) {
 								var mapInfo = response.success;
 								var markers = mapInfo.markers;
 								for (var i = 0; i < markers.length; i++) {
-
 									var name = markers[i].name;
 									var address = markers[i].address;
 									var anim = markers[i].animation;
-
-									var description = markers[i].description;
+									var description = markers[i].description.replace(/\\/ig, "");
 									var markimg = markers[i].img;
 									var img = new google.maps.MarkerImage(markimg,
 										new google.maps.Size(20, 20));
