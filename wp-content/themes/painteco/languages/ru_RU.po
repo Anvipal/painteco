@@ -361,3 +361,12 @@ msgstr "Подписаться на последние новости"
 
 msgid "Abonēt"
 msgstr "Отправить"
+
+msgid "Parādīt visu"
+msgstr "Показать все"
+
+msgid "Kur nopirkt"
+msgstr "Где купить"
+
+msgid "Slēpt"
+msgstr "Спрятать"

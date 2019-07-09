@@ -364,3 +364,12 @@ msgstr "Subscribe to our newsletter"
 
 msgid "Abonēt"
 msgstr "Send"
+
+msgid "Parādīt visu"
+msgstr "Show All"
+
+msgid "Kur nopirkt"
+msgstr "Where to buy"
+
+msgid "Slēpt"
+msgstr "Hide"
