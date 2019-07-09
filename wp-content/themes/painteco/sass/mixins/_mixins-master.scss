@@ -25,9 +25,9 @@
 
 // Box shadow for boxes and images
 @mixin shadow() {
-  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.3);
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.3);
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
 @mixin no-shadow() {

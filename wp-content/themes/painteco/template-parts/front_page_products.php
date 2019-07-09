@@ -30,7 +30,7 @@
                     <a href="#" title="" class="paint-products-item-nav-next">Next</a>
                 </div>
 
-                <div class="paint-products-item-cnt">
+                <div class="paint-products-item-cnt products-list">
                     <?php while ($productsQuery->have_posts()) : $productsQuery->the_post(); ?>
                     <?php
                         $mixClasses = '';
@@ -44,7 +44,7 @@
                         $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
                         $thumbnailUrl = $thumbnail[0];
                     ?>
-                    <div class="paint-products-item-box">
+                   <!--  <div class="paint-products-item-box">
                         <div class="paint-products-item">
                             <div class="paint-products-item-content" style="background-image:url('<?php echo $thumbnailUrl; ?>'); background-size: contain;">
                                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -55,7 +55,19 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
+
+                    <!-- Product list -->
+
+                    <!-- <div class="col-sm-3 mix <?php echo $mixClasses; ?>"> -->
+                        <div class="paint-products-item-box">
+                            <div class="product-item">
+                                <a href="<?php the_permalink(); ?>" title=""><img src="<?php echo $thumbnailUrl; ?>" alt="<?php the_title(); ?>"></a>
+                                <h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+                            </div>
+                        </div>
+                    <!-- </div> -->
+
                 <?php endwhile; ?>
                 </div>
 

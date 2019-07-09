@@ -16,6 +16,10 @@
       border: 1px solid #e1e1e1;
     }
 
+    &:hover img {
+      filter: opacity(70%);
+    }
+
     h2 {
       text-transform: uppercase;
       @include font-size(1.8);

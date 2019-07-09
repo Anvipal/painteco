@@ -16,10 +16,10 @@ $front_page_icon-height: 92px;
   }
   .paint-options {
     margin-top: 60px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
     @include tablet-portrait-down {
       margin-top: 20px;
-      margin-bottom: 20px;
+      //margin-bottom: 20px;
     }
 
     // @include mobile-landscape-down {

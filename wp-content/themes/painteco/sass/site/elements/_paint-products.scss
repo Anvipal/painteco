@@ -8,7 +8,6 @@
 }
 
 .paint-products-item {
-
   width: 278px;
   height: 250px;
 
@@ -25,14 +24,15 @@
   padding: 8px;
 
   float: left;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 10px;
+  margin: 0 5px 10px;
 
   @include mobile-landscape-down {
     margin-bottom: 30px;
   }
+}
 
+.paint-products-item-cnt .product-item {
+  margin: 12px;
 }
 
 .paint-products-item-content {
@@ -111,10 +111,12 @@
 
   a {
     position: absolute;
-    top: 95px;
+    top: 50%;
+    margin-top: -25px;
 
     @include tablet-landscape-down {
       top: 0;
+      margin-top: 0;
       position: relative;
       margin-left: 20px;
     }
