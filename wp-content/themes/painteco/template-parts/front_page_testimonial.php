@@ -1,7 +1,9 @@
 <?php if(have_rows('testimonial_provider', 'options')): ?>
     <div class="testimonial-slider" id="testimonial">
-
         <div class="container">
+            <div class="tools-text text-center">
+                <h3>Reviews <br><br></h3>
+            </div>
             <div class="row">
                 <div class="col-sm-12 testimonial-slider-items">
                     <?php while( have_rows('testimonial_provider', 'options') ): the_row(); ?>

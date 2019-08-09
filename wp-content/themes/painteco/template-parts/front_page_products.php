@@ -18,10 +18,12 @@
 
 <!-- Products -->
 <div class="container paint-products">
+    <div class="tools-text text-center">
+        <h3><br>Our Products</h3>
+    </div>
     <div class="row">
         <div class="col-sm-12">
-
-                <?php
+            <?php
                 $productsQuery = new WP_Query(['post_type' => 'painteco_product']);
                 if ($productsQuery->have_posts()) :?>
 
