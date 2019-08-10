@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Painteco\n"
 "POT-Creation-Date: 2016-06-15 21:54+0300\n"
-"PO-Revision-Date: 2019-07-01 23:29+0300\n"
+"PO-Revision-Date: 2019-08-10 21:09+0300\n"
 "Last-Translator: \n"
 "Language-Team: Lapuvieta.lv <info@lapuvieta.lv>\n"
 "Language: ru\n"
@@ -301,7 +301,7 @@ msgstr "Баня"
 
 #: template-parts/front_page_tools.php:6
 msgid "Izkrāso pats!"
-msgstr "Разкрась сам!"
+msgstr "Раскрась сам!"
 
 #: template-parts/front_page_tools.php:7
 msgid "Izmanto mūsu modelēšanas rīku, lai ieraudzītu pasauli mūsu krāsās."
