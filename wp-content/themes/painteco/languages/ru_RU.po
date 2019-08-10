@@ -370,3 +370,9 @@ msgstr "Где купить"
 
 msgid "Slēpt"
 msgstr "Спрятать"
+
+msgid "Mūsu producti"
+msgstr "Наши продукты"
+
+msgid "Atsauksmes"
+msgstr "Отзывы"

@@ -373,3 +373,9 @@ msgstr "Where to buy"
 
 msgid "Slēpt"
 msgstr "Hide"
+
+msgid "Mūsu producti"
+msgstr "Our products"
+
+msgid "Atsauksmes"
+msgstr "Reviews"
