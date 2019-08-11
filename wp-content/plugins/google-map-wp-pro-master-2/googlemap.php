@@ -1255,7 +1255,7 @@ function g_map_options_callback() {
 						'center_lng'              => $mapinfo->center_lng
 					);
 				}
-				$sql        = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%d", $id );
+				$sql        = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%d ORDER BY id ASC", $id );
 				$getMarkers = $wpdb->get_results( $sql );
 
 				if ( isset( $getMarkers ) ) {

@@ -296,7 +296,6 @@ function showpublishedmap( $id ) {
                             var $list = jQuery("#shops_list");
                             if (response.success) {
                                 var markers = response.success.markers;
-                                var prevCity = '';
                                 var orderedMarkers = {};
                                 for (var i = 0; i < markers.length; i++) {
                                     var description = JSON.parse(markers[i].description.replace(/\\/ig, "")) || {};
