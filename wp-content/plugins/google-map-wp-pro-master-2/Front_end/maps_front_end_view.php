@@ -305,7 +305,9 @@ function showpublishedmap( $id ) {
 									var name = markers[i].name;
 									var address = markers[i].address;
 									var anim = markers[i].animation;
-									var description = markers[i].description.replace(/\\/ig, "");
+									var description = JSON.parse(markers[i].description.replace(/\\/ig, "")) || {};
+									var city = description.city || '';
+									var phone = description.phone || '';
 									var markimg = markers[i].img;
 									var img = new google.maps.MarkerImage(markimg,
 										new google.maps.Size(20, 20));

@@ -305,7 +305,9 @@ function marker_js( $id ) {
 										var name = markers[y].name;
 										var address = markers[y].address;
 										var anim = markers[y].animation;
-										var description = markers[y].description;
+										var description = JSON.parse(markers[y].description) || {};
+										var city = description.city;
+										var phone = description.phone;
 										var markimg = markers[y].img;
 
 										jQuery("#marker_edit_pic_name").val(markimg);
@@ -349,7 +351,9 @@ function marker_js( $id ) {
 										jQuery("#marker_edit_location_lng").val(lng);
 										jQuery("#marker_edit_animation").val(anim);
 										jQuery("#marker_edit_title").val(name);
-										jQuery("#marker_edit_description").val(description);
+										// jQuery("#marker_edit_description").val(description);
+										jQuery("#marker_edit_phone").val(phone);
+										jQuery("#marker_edit_city").val(city);
 										if (markeredit) {
 											markeredit.setMap(null);
 										}
