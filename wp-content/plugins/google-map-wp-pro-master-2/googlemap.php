@@ -835,7 +835,6 @@ function g_map_options_callback() {
 			$sql = $wpdb->prepare( "UPDATE " . $wpdb->prefix . "g_markers SET title=%s,description=%s,size=%s, lat=%s, lng=%s, animation=%s, img=%s WHERE id=%s",
 				wp_unslash( $_POST['marker_edit_title'] ),
 				wp_unslash( $_POST['marker_edit_description'] ),
-//            wp_unslash(json_encode(array('city' => $_POST['marker_edit_city'], 'phone' => $_POST['marker_edit_phone']))),
 				wp_unslash( $_POST['marker_edit_image_size'] ), wp_unslash( $_POST['marker_edit_location_lat'] ),
 				wp_unslash( $_POST['marker_edit_location_lng'] ), wp_unslash( $_POST['marker_edit_animation'] ),
 				wp_unslash( $_POST['marker_edit_image'] ), wp_unslash( $_POST['id'] ) );
@@ -1434,8 +1433,6 @@ class Huge_it_google_maps_Widget extends WP_Widget {
 			$query     = "SELECT * FROM " . $wpdb->prefix . "g_maps ";
 			$rowwidget = $wpdb->get_results( $query );
 			foreach ( $rowwidget as $rowwidgetecho ) {
-
-				selected
 				?>
                 <option <?php if ( $rowwidgetecho->id == $instance['g_map_id'] ) {
 					echo 'selected';

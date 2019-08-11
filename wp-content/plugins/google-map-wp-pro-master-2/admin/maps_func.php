@@ -411,7 +411,6 @@ function maps_js( $id ) {
 							var markers = mapInfo.markers;
 							for (j = 0; j < markers.length; j++) {
 								var name = markers[j].name;
-								var address = markers[j].address;
 								var anim = markers[j].animation;
 								var description = markers[j].description;
 								var markimg = markers[j].img;
@@ -645,7 +644,7 @@ function maps_js( $id ) {
 								strokeWeight: circle_line_width,
 								fillColor: "#" + circle_fill_color,
 								fillOpacity: circle_fill_opacity
-							})
+							});
 							google.maps.event.addListener(circle[u], 'mouseover', function (event) {
 								var circle_index = circle.indexOf(this);
 								hover_new_line_opacity = circles[circle_index].hover_line_opacity;
@@ -656,9 +655,9 @@ function maps_js( $id ) {
 									strokeColor: hover_new_line_color,
 									strokeOpacity: hover_new_line_opacity,
 									fillOpacity: hover_new_fill_opacity,
-									fillColor: hover_new_fill_color,
+									fillColor: hover_new_fill_color
 								});
-							})
+							});
 							google.maps.event.addListener(circle[u], 'mouseout', function (event) {
 								circle_index = circle.indexOf(this);
 								new_line_opacity = circles[circle_index].line_opacity;
@@ -669,9 +668,9 @@ function maps_js( $id ) {
 									strokeColor: new_line_color,
 									strokeOpacity: new_line_opacity,
 									fillOpacity: new_fill_opacity,
-									fillColor: new_fill_color,
+									fillColor: new_fill_color
 								});
-							})
+							});
 
 							jQuery(".edit_list_delete_submit").on("click", function () {
 								var parent = jQuery(this).parent();
@@ -690,7 +689,7 @@ function maps_js( $id ) {
 									deleteItem(id, table, li, x);
 								}
 								return false;
-							})
+							});
 							if (circle_show_marker == '1') {
 								newcirclemarker[i] = new google.maps.Marker({
 									position: circlepoint,
@@ -705,13 +704,13 @@ function maps_js( $id ) {
 							action: 'g_map_options',
 							id: id,
 							table: table,
-						}
+						};
 
 						jQuery.post("<?php echo admin_url( 'admin-ajax.php' ); ?>", delete_data, function (response) {
 							if (response.success) {
 								li.remove();
 							}
-						}, "json")
+						}, "json");
 					}
 				}
 			}
@@ -1049,7 +1048,8 @@ function ajax_js( $id ) {
 				// var marker_edit_description = jQuery("#marker_edit_description").val();
                 var marker_edit_city = jQuery('#marker_edit_city').val();
                 var marker_edit_phone = jQuery('#marker_edit_phone').val();
-                var marker_edit_description = JSON.stringify({city: marker_edit_city, phone: marker_edit_phone});
+                var marker_edit_address = jQuery('#marker_edit_address').val();
+                var marker_edit_description = JSON.stringify({city: marker_edit_city, phone: marker_edit_phone. address: marker_edit_address});
 				var marker_edit_image_size = jQuery("#marker_edit_image_size").val();
 				if (jQuery(this).parent().parent().find(".marker_image_choose ul li.active").html() != undefined && jQuery(this).parent().parent().find(".marker_image_choose ul li.active input[type=radio]").val() != 'default') {
 					var marker_edit_image = jQuery(this).parent().parent().find(".marker_image_choose ul li.active input[type=radio]").val();
@@ -1072,8 +1072,8 @@ function ajax_js( $id ) {
 					marker_edit_title: marker_edit_title,
 					marker_edit_description: marker_edit_description,
 					marker_edit_image: marker_edit_image,
-					marker_edit_image_size: marker_edit_image_size,
-				}
+					marker_edit_image_size: marker_edit_image_size
+				};
 				jQuery(this).css({background: "url(../wp-content/plugins/google-map-wp/images/122.gif) #2ea2cc 55px center no-repeat"});
 				jQuery.post("<?php echo admin_url( 'admin-ajax.php' ); ?>", marker_edit_data, function (response) {
 					if (response.success) {

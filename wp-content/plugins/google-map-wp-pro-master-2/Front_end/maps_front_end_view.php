@@ -297,11 +297,10 @@ function showpublishedmap( $id ) {
                             if (response.success) {
                                 var markers = response.success.markers;
                                 var prevCity = '';
-                                var cityBlock = '';
                                 for (var i = 0; i < markers.length; i++) {
                                     var description = JSON.parse(markers[i].description.replace(/\\/ig, "")) || {};
                                     var city = description.city || '';
-                                    var address = markers[i].address;
+                                    var address = description.address || '';
                                     var phone = description.phone || '';
                                     if (city !== prevCity) {
                                         $list.append("<h4>" + city + "</h4>");
@@ -317,11 +316,11 @@ function showpublishedmap( $id ) {
                                 var markers = mapInfo.markers;
                                 for (var i = 0; i < markers.length; i++) {
                                     var name = markers[i].name;
-                                    var address = markers[i].address;
                                     var anim = markers[i].animation;
                                     var description = JSON.parse(markers[i].description.replace(/\\/ig, "")) || {};
                                     var city = description.city || '';
                                     var phone = description.phone || '';
+                                    var address = description.address || '';
                                     var markimg = markers[i].img;
                                     var img = new google.maps.MarkerImage(markimg,
                                         new google.maps.Size(20, 20));
