@@ -304,6 +304,7 @@ function showpublishedmap( $id ) {
                                     var phone = description.phone || '';
                                     if (city !== prevCity) {
                                         $list.append("<h4>" + city + "</h4>");
+                                        prevCity = city;
                                     }
                                     $list.append("<p>" + city + "," + address + "," + "<a href='tel:" + phone + "'>" + phone + "</a></p>");
                                 }
