@@ -412,7 +412,8 @@ function maps_js( $id ) {
 							for (j = 0; j < markers.length; j++) {
 								var name = markers[j].name;
 								var anim = markers[j].animation;
-								var description = markers[j].description;
+								var description = JSON.parse(markers[j].description);
+								var address = description.address;
 								var markimg = markers[j].img;
 								var img = new google.maps.MarkerImage(markimg,
 									new google.maps.Size(20, 20));
@@ -1049,7 +1050,7 @@ function ajax_js( $id ) {
                 var marker_edit_city = jQuery('#marker_edit_city').val();
                 var marker_edit_phone = jQuery('#marker_edit_phone').val();
                 var marker_edit_address = jQuery('#marker_edit_address').val();
-                var marker_edit_description = JSON.stringify({city: marker_edit_city, phone: marker_edit_phone. address: marker_edit_address});
+                var marker_edit_description = JSON.stringify({city: marker_edit_city, phone: marker_edit_phone, address: marker_edit_address});
 				var marker_edit_image_size = jQuery("#marker_edit_image_size").val();
 				if (jQuery(this).parent().parent().find(".marker_image_choose ul li.active").html() != undefined && jQuery(this).parent().parent().find(".marker_image_choose ul li.active input[type=radio]").val() != 'default') {
 					var marker_edit_image = jQuery(this).parent().parent().find(".marker_image_choose ul li.active input[type=radio]").val();
