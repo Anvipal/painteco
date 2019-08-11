@@ -297,16 +297,28 @@ function showpublishedmap( $id ) {
                             if (response.success) {
                                 var markers = response.success.markers;
                                 var prevCity = '';
+                                var orderedMarkers = {};
                                 for (var i = 0; i < markers.length; i++) {
                                     var description = JSON.parse(markers[i].description.replace(/\\/ig, "")) || {};
                                     var city = description.city || '';
                                     var address = description.address || '';
                                     var phone = description.phone || '';
-                                    if (city !== prevCity) {
-                                        $list.append("<h4>" + city + "</h4>");
-                                        prevCity = city;
+                                    if (!orderedMarkers[city]) {
+                                        orderedMarkers[city] = [];
                                     }
-                                    $list.append("<p>" + city + "," + address + "," + "<a href='tel:" + phone + "'>" + phone + "</a></p>");
+                                    orderedMarkers[city].push({
+                                        address: address,
+                                        phone: phone
+                                    });
+                                }
+                                for (var property in orderedMarkers) {
+                                    if (orderedMarkers.hasOwnProperty(property)) {
+                                        $list.append("<h4>" + property + "</h4>");
+                                        var length = orderedMarkers[property].length;
+                                        for (var i = 0; i < length; i++) {
+                                            $list.append("<p>" + property + "," + orderedMarkers[property][i].address + "," + "<a href='tel:" + orderedMarkers[property][i].phone + "'>" + orderedMarkers[property][i].phone + "</a></p>");
+                                        }
+                                    }
                                 }
                             }
                         }
