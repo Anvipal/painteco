@@ -293,7 +293,7 @@ function showpublishedmap( $id ) {
                         });
 
                         function CreateMarkerList(response) {
-                            var $list = jQuery("#shop_list");
+                            var $list = jQuery("#shops_list");
                             if (response.success) {
                                 var markers = response.success.markers;
                                 var prevCity = '';
