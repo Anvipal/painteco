@@ -451,7 +451,7 @@ function g_map_nopriv_options_callback() {
 						'center_lng'              => $mapinfo->center_lng
 					);
 				}
-				$sql        = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%d", $id );
+				$sql        = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%d ORDER BY city DESC, id ASC", $id );
 				$getMarkers = $wpdb->get_results( $sql );
 
 				if ( isset( $getMarkers ) ) {
@@ -1072,7 +1072,7 @@ function g_map_options_callback() {
 				if ( $wpdb->query( $insertQuery ) ) {
 					$new_map_id = $wpdb->insert_id;
 
-					$queryMarkers  = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%s", $id );
+					$queryMarkers  = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%s ORDER BY city DESC, id ASC", $id );
 					$markerResults = $wpdb->get_results( $queryMarkers );
 					if ( $markerResults ) {
 						foreach ( $markerResults as $markercopy ) {
@@ -1168,7 +1168,7 @@ function g_map_options_callback() {
 				'name: ' . $mapResults->name . ', type :' . $mapResults->type . ', zoom: ' . $mapResults->zoom . ', border radius: ' . $mapResults->border_radius . ', center latitude: ' . $mapResults->center_lat . ', center longitude: ' . $mapResults->center_lng . ', width: ' . $mapResults->width . '%, height: ' . $mapResults->type . 'px, align:' . $mapResults->align . ', wheel scroll:' . $mapResults->wheel_scroll . ', draggable: ' . $mapResults->draggable . ', language:' . $mapResults->language . ', minimum zoom: ' . $mapResults->min_zoom . ', max_zoom:' . $mapResults->max_zoom . ', info_type: ' . $mapResults->info_type . '',
 			);
 
-			$queryMarkers  = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%s", $id );
+			$queryMarkers  = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%s ORDER BY city DESC, id ASC", $id );
 			$markerResults = $wpdb->get_results( $queryMarkers );
 			if ( $markerResults ) {
 				array_push( $map_array, 'Markers' );
@@ -1255,7 +1255,7 @@ function g_map_options_callback() {
 						'center_lng'              => $mapinfo->center_lng
 					);
 				}
-				$sql        = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%d", $id );
+				$sql        = $wpdb->prepare( "SELECT * FROM " . $wpdb->prefix . "g_markers WHERE map=%d ORDER BY city DESC id ASC", $id );
 				$getMarkers = $wpdb->get_results( $sql );
 
 				if ( isset( $getMarkers ) ) {
