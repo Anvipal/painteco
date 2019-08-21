@@ -2,7 +2,7 @@
     <div class="testimonial-slider" id="testimonial">
         <div class="container">
             <div class="tools-text text-center">
-                <h3><?php __('Atsauksmes') ?><br><br></h3>
+                <h3><?php echo __('Atsauksmes') ?><br><br></h3>
             </div>
             <div class="row">
                 <div class="col-sm-12 testimonial-slider-items">
