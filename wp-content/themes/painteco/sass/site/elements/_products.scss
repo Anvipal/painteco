@@ -1,5 +1,4 @@
 .products-list {
-
   .product-item {
     background: #fff;
     margin-bottom: 60px;
@@ -44,8 +43,16 @@
       }
     }
 
-  }
+    @include tablet-portrait-down {
+      margin-bottom: 15px;
 
+      h2 {
+        font-size: 16px;
+        font-size: 1.6rem;
+        min-height: 20px;
+      }
+    }
+  }
 }
 
 .product-options {
