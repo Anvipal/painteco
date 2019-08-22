@@ -312,7 +312,7 @@ function painteco_contact_form() {
 //		global $wp;
 //		$current_url = home_url( add_query_arg( array(), $wp->request ) );
 //
-//		//return wp_redirect( $current_url );
+		return wp_redirect( 'thank-you' );
 	}
 
 	return true;
