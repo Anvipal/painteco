@@ -379,3 +379,6 @@ msgstr "Our products"
 
 msgid "Atsauksmes"
 msgstr "Reviews"
+
+msgid "Paldies, ka pieteicātiem mūsu jaunumiem!"
+msgstr "Thank you for subscribing!"
