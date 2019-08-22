@@ -3,8 +3,8 @@
 
 get_header();
 ?>
-<p>
+<h1>
 	<?php echo __('Paldies, ka pieteicātiem mūsu jaunumiem!', 'painteco'); ?>
-</p>
+</h1>
 <?php
 get_footer();
