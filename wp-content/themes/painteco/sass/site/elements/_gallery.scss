@@ -115,5 +115,12 @@
       }
     }
   }
+}
 
+.gallery-image-big {
+  background: no-repeat center/cover;
+}
+
+.gallery-images-big, .gallery-image-big {
+  height: 500px;
 }

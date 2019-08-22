@@ -82,6 +82,30 @@
         ]
     });
 
+    $('.gallery-images-cnt').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        speed: 'fast',
+        arrows: true,
+        asNavFor: '.gallery-images-big',
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3
+            }
+        }]
+    });
+
+    $('.gallery-images-big').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        lazyLoad: 'ondemand',
+        speed: 'fast',
+        arrows: true,
+        asNavFor: '.gallery-images-cnt'
+    });
 
     // Instantiate MixItUp:
     $('#paint-products-list').mixItUp({
