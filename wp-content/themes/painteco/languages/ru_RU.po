@@ -379,3 +379,6 @@ msgstr "Отзывы"
 
 msgid "Paldies, ka pieteicātiem mūsu jaunumiem!"
 msgstr "Спасибо за подписку!"
+
+msgid "Uz galveno"
+msgstr "На главную"
