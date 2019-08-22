@@ -346,7 +346,7 @@ function showpublishedmap( $id ) {
                                             position: point,
                                             title: name,
                                             icon: markimg,
-                                            content: description,
+                                            content: address,
                                             animation: google.maps.Animation.DROP,
                                         });
                                     }
@@ -355,7 +355,7 @@ function showpublishedmap( $id ) {
                                             map: front_end_map,
                                             position: point,
                                             title: name,
-                                            content: description,
+                                            content: address,
                                             icon: markimg,
                                             animation: google.maps.Animation.BOUNCE
                                         });
@@ -365,12 +365,12 @@ function showpublishedmap( $id ) {
                                             map: front_end_map,
                                             position: point,
                                             icon: markimg,
-                                            content: description,
+                                            content: address,
                                             title: name,
                                         });
                                     }
                                     infowindow[i] = new google.maps.InfoWindow;
-                                    bindInfoWindow(marker[i], front_end_map, infowindow[i], description, "<?php echo $map->info_type; ?>");
+                                    bindInfoWindow(marker[i], front_end_map, infowindow[i], address, "<?php echo $map->info_type; ?>");
                                 }
                                 var polygones = mapInfo.polygons;
                                 for (var i = 0; i < polygones.length; i++) {

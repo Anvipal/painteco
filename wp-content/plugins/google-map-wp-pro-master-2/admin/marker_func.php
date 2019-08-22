@@ -363,7 +363,7 @@ function marker_js( $id ) {
 												position: point,
 												title: name,
 												icon: markimg,
-												content: description,
+												content: address,
 												animation: google.maps.Animation.DROP,
 												draggable: true
 											});
@@ -373,7 +373,7 @@ function marker_js( $id ) {
 												map: map_marker_edit,
 												position: point,
 												title: name,
-												content: description,
+												content: address,
 												icon: markimg,
 												animation: google.maps.Animation.BOUNCE,
 												draggable: true
@@ -384,7 +384,7 @@ function marker_js( $id ) {
 												map: map_marker_edit,
 												position: point,
 												icon: markimg,
-												content: description,
+												content: address,
 												title: name,
 												draggable: true
 											});
