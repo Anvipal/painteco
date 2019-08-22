@@ -86,8 +86,9 @@
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
-        speed: 'fast',
-        arrows: true,
+        speed: 400,
+        arrows: false,
+        focusOnSelect: true,
         asNavFor: '.gallery-images-big',
         responsive: [{
             breakpoint: 992,
@@ -102,8 +103,9 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
-        speed: 'fast',
+        speed: 400,
         arrows: true,
+        focusOnSelect: true,
         asNavFor: '.gallery-images-cnt'
     });
 
