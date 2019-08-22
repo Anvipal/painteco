@@ -1041,14 +1041,14 @@ function ajax_js( $id ) {
 				return false;
 			})
 			jQuery("#marker_edit_submmit").on("click", function () {
-				var marker_edit_location = jQuery("#marker_edit_location").val();
+				var marker_edit_location = jQuery("#marker_edit_location").val() || '';
 				var marker_edit_location_lat = jQuery("#marker_edit_location_lat").val();
 				var marker_edit_location_lng = jQuery("#marker_edit_location_lng").val();
 				var marker_edit_animation = jQuery("#marker_edit_animation").val();
 				var marker_edit_title = jQuery("#marker_edit_title").val();
 				// var marker_edit_description = jQuery("#marker_edit_description").val();
-                var marker_edit_city = jQuery('#marker_edit_city').val();
-                var marker_edit_phone = jQuery('#marker_edit_phone').val();
+                var marker_edit_city = jQuery('#marker_edit_city').val() || '';
+                var marker_edit_phone = jQuery('#marker_edit_phone').val() || '';
                 var marker_edit_description = JSON.stringify({city: marker_edit_city, phone: marker_edit_phone, address: marker_edit_location});
 				var marker_edit_image_size = jQuery("#marker_edit_image_size").val();
 				if (jQuery(this).parent().parent().find(".marker_image_choose ul li.active").html() != undefined && jQuery(this).parent().parent().find(".marker_image_choose ul li.active input[type=radio]").val() != 'default') {
