@@ -19,7 +19,7 @@
 <!-- Products -->
 <div class="container paint-products">
     <div class="tools-text text-center">
-        <h3><br><?php __('Mūsu producti'); ?></h3>
+        <h3><br><?php esc_html_e('Mūsu producti', 'painteco'); ?></h3>
     </div>
     <div class="row">
         <div class="col-sm-12">
