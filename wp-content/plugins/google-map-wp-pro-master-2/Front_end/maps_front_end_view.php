@@ -315,7 +315,10 @@ function showpublishedmap( $id ) {
                                         $list.append("<h4>" + property + "</h4>");
                                         var length = orderedMarkers[property].length;
                                         for (var i = 0; i < length; i++) {
-                                            $list.append("<p>" + property + "," + orderedMarkers[property][i].address + "," + "<a href='tel:" + orderedMarkers[property][i].phone + "'>" + orderedMarkers[property][i].phone + "</a></p>");
+                                            $list.append("<p>" +
+                                                (orderedMarkers[property][i].address ? orderedMarkers[property][i].address : "") +
+                                                (orderedMarkers[property][i].phone ? "<br/><a href='tel:+371" + orderedMarkers[property][i].phone + "'>tel: " + orderedMarkers[property][i].phone + "</a>" : "") +
+                                            "</p>");
                                         }
                                     }
                                 }

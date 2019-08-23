@@ -109,17 +109,38 @@
 }
 
 .contacts-shops_list {
-  column-count: 3;
+  column-count: 5;
   column-gap: 30px;
-  @include font-size(1.4);
+  @include font-size(1.5);
   max-height: 200px;
   transition: all .2s;
   overflow: hidden;
 
+  -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+
+  h4 {
+    font-weight: 600;
+  }
+
+  a, a:hover {
+    color: #fff;
+  }
+
   &.open {
     max-height: 2000px;
   }
+
+  @include tablet-landscape-down {
+    column-count: 3;
+  }
+
+  @include mobile-landscape-down {
+    column-count: 1;
+  }
 }
+
 
 .contacts_showall {
   margin-top: 30px;
