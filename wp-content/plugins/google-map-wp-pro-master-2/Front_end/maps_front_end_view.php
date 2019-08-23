@@ -302,12 +302,14 @@ function showpublishedmap( $id ) {
                                     var city = description.city || '';
                                     var address = description.address || '';
                                     var phone = description.phone || '';
+                                    var name = markers[i].name.replace(/\\/ig, "") || '';
                                     if (!orderedMarkers[city]) {
                                         orderedMarkers[city] = [];
                                     }
                                     orderedMarkers[city].push({
                                         address: address,
-                                        phone: phone
+                                        phone: phone,
+                                        name: name
                                     });
                                 }
                                 for (var property in orderedMarkers) {
@@ -316,6 +318,7 @@ function showpublishedmap( $id ) {
                                         var length = orderedMarkers[property].length;
                                         for (var i = 0; i < length; i++) {
                                             $list.append("<p>" +
+                                                (orderedMarkers[property][i].name ? "<b>" + orderedMarkers[property][i].name + "</b>, " : "") +
                                                 (orderedMarkers[property][i].address ? orderedMarkers[property][i].address : "") +
                                                 (orderedMarkers[property][i].phone ? "<br/><a href='tel:+371" + orderedMarkers[property][i].phone + "'>tel: " + orderedMarkers[property][i].phone + "</a>" : "") +
                                             "</p>");
@@ -330,7 +333,7 @@ function showpublishedmap( $id ) {
                                 var mapInfo = response.success;
                                 var markers = mapInfo.markers;
                                 for (var i = 0; i < markers.length; i++) {
-                                    var name = markers[i].name;
+                                    var name = markers[i].name.replace(/\\/ig, "");
                                     var anim = markers[i].animation;
                                     var description = JSON.parse(markers[i].description.replace(/\\/ig, "") || "{}");
                                     var city = description.city || '';
