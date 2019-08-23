@@ -305,7 +305,7 @@ function marker_js( $id ) {
 										var name = markers[y].name;
 										var address = markers[y].address;
 										var anim = markers[y].animation;
-										var description = JSON.parse(markers[y].description) || {};
+										var description = JSON.parse(markers[y].description || "{}");
 										var city = description.city;
 										var phone = description.phone;
 										var markimg = markers[y].img;

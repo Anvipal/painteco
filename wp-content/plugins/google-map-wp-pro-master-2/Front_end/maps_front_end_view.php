@@ -298,7 +298,7 @@ function showpublishedmap( $id ) {
                                 var markers = response.success.markers;
                                 var orderedMarkers = {};
                                 for (var i = 0; i < markers.length; i++) {
-                                    var description = JSON.parse(markers[i].description.replace(/\\/ig, "")) || {};
+                                    var description = JSON.parse(markers[i].description.replace(/\\/ig, "") || "{}");
                                     var city = description.city || '';
                                     var address = description.address || '';
                                     var phone = description.phone || '';
@@ -329,7 +329,7 @@ function showpublishedmap( $id ) {
                                 for (var i = 0; i < markers.length; i++) {
                                     var name = markers[i].name;
                                     var anim = markers[i].animation;
-                                    var description = JSON.parse(markers[i].description.replace(/\\/ig, "")) || {};
+                                    var description = JSON.parse(markers[i].description.replace(/\\/ig, "") || "{}");
                                     var city = description.city || '';
                                     var phone = description.phone || '';
                                     var address = description.address || '';

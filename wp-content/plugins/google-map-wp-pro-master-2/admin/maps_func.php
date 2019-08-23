@@ -412,7 +412,7 @@ function maps_js( $id ) {
 							for (j = 0; j < markers.length; j++) {
 								var name = markers[j].name;
 								var anim = markers[j].animation;
-								var description = JSON.parse(markers[j].description);
+								var description = JSON.parse(markers[j].description || "{}");
 								var address = description.address;
 								var markimg = markers[j].img;
 								var img = new google.maps.MarkerImage(markimg,
