@@ -1183,10 +1183,6 @@ function edit_map() {
                                         <label for="marker_phone">Phone</label>
                                         <input class="phone" autocomplete="off" id="marker_phone" name="marker_phone" type="tel"/>
                                     </li>
-                                    <li class="address_container">
-                                        <label for="marker_address">Address</label>
-                                        <input class="address" autocomplete="off" id="marker_address" name="marker_address" type="text"/>
-                                    </li>
                                     <li class="has_background">
                                         Choose Marker Icon
                                     </li>
